@@ -24,7 +24,7 @@ $(function(){
 	//移动背景图片居中
 	$ali.css('background-position',(viewW-nowWidth)/2+'px 0px');
 
-	// loading();
+	//loading();
 	//划屏效果
 	slideList();
 	//背景音乐
@@ -98,15 +98,15 @@ $(function(){
 			$ali.eq(nextIndex).css('z-index',5).siblings().hide();
 			
 			//当前屏执行出场动画
-			if(animations[nowIndex]){	
-				animations[nowIndex].outAnimate();
-			}
+			// if(animations[nowIndex]){	
+			// 	animations[nowIndex].outAnimate();
+			// }
 			
-			// //下一屏执行入场动画
-			if(animations[nextIndex]){
+			// // //下一屏执行入场动画
+			// if(animations[nextIndex]){
 				
-				animations[nextIndex].inAnimate();
-			}
+			// 	animations[nextIndex].inAnimate();
+			// }
 			
 		})	
 	}
@@ -138,100 +138,139 @@ $(function(){
 
 	//场景动画
 	
-	var animations = [
-		{
-			//入场动画
-			inAnimate:function(){
-				console.log('in');
-				var alis = $ali.eq(0).children();
-				alis.css('transition','3s');
-				alis.css('transform','translate(0,0)');
-				alis.css('opacity',1);
-			},
-			//出场动画
-			outAnimate:function(){
-				console.log('out');
-				var alis = $ali.eq(0).children();
-				alis.css('transition','');
-				alis.filter(':odd').css('transform','translate(-200px,0)');
-				alis.filter(':even').css('transform','translate(200px,0)');
-				alis.css('opacity',0);
-				alis.eq(0).css('transform','');
-				alis.eq(0).css('opacity',0)
-			}
+	var animations = [];
+	// var animations = [
+	// 	{
+	// 		//入场动画
+	// 		inAnimate:function(){
+	// 			var alis = $ali.eq(0).children();
+	// 			// alis.addClass('wow');
+	// 			alis.attr('data-wow-duration','2s')
+	// 			alis.attr('data-wow-delay','1s')
+	// 		},
+	// 		//出场动画
+	// 		outAnimate:function(){
+	// 			// var alis = $ali.eq(0).children();
+	// 			// alis.eq(0).removeClass();
+	// 			// alis.filter(':odd').addClass('slideInLeft');
+	// 			// alis.filter(':even').addClass('slideInRight');
+
+	// 		}
 			
-		},
-		{
-			//入场动画
-			inAnimate:function(){
+	// 	},
+	// 	{
+	// 		//入场动画
+	// 		inAnimate:function(){
 				
-				var alis = $ali.eq(1).find('li');
-				alis.css('transition','2s');
-				alis.attr('class','');
-				alis.css('transform','rotate(720deg)');
-			},
-			//出场动画
-			outAnimate:function(){
-				var alis = $ali.eq(1).find('li');
-				alis.css('transition','');
-				alis.attr('class','origi');
-				alis.css('transform','rotate(0)');
+	// 			var alis = $ali.eq(1).find('li');
+	// 			alis.css('transition','2s');
+	// 			alis.attr('class','');
+	// 			alis.css('transform','rotate(720deg)');
+	// 		},
+	// 		//出场动画
+	// 		outAnimate:function(){
+	// 			var alis = $ali.eq(1).find('li');
+	// 			alis.css('transition','');
+	// 			alis.attr('class','origi');
+	// 			alis.css('transform','rotate(0)');
 				
-			}	
-		},
-		// {
-		// 	// //入场动画
-		// 	// inAnimate:function(){
+	// 		}	
+	// 	},
+	// 	// {
+	// 	// 	// //入场动画
+	// 	// 	// inAnimate:function(){
 				
-		// 	// 	var alis = $ali.eq(2).find('.li3Child');
-		// 	// 	alis.css('transition','3s');
+	// 	// 	// 	var alis = $ali.eq(2).find('.li3Child');
+	// 	// 	// 	alis.css('transition','3s');
 				
-		// 	// 	alis.css('transform','rotateY(0deg)');
-		// 	// },
-		// 	// //出场动画
-		// 	// outAnimate:function(){
-		// 	// 	var alis = $ali.eq(2).find('.li3Child');
-		// 	// 	alis.css('transition','');
+	// 	// 	// 	alis.css('transform','rotateY(0deg)');
+	// 	// 	// },
+	// 	// 	// //出场动画
+	// 	// 	// outAnimate:function(){
+	// 	// 	// 	var alis = $ali.eq(2).find('.li3Child');
+	// 	// 	// 	alis.css('transition','');
 				
-		// 	// 	alis.css('transform','rotateY(720deg)');
+	// 	// 	// 	alis.css('transform','rotateY(720deg)');
 				
-		// 	// }
+	// 	// 	// }
 			
-		// },
-		// {
-		// 	// //入场动画
-		// 	// inAnimate:function(){
+	// 	// },
+	// 	// {
+	// 	// 	// //入场动画
+	// 	// 	// inAnimate:function(){
 				
-		// 	// 	var alis = $ali.eq(3).find('li');
-		// 	// 	alis.css('transition','4s');
+	// 	// 	// 	var alis = $ali.eq(3).find('li');
+	// 	// 	// 	alis.css('transition','4s');
 				
-		// 	// 	alis.attr('class','');
-		// 	// },
-		// 	// //出场动画
-		// 	// outAnimate:function(){
-		// 	// 	var alis = $ali.eq(3).find('li');
-		// 	// 	alis.css('transition','');
-		// 	// 	alis.attr('class','active');
+	// 	// 	// 	alis.attr('class','');
+	// 	// 	// },
+	// 	// 	// //出场动画
+	// 	// 	// outAnimate:function(){
+	// 	// 	// 	var alis = $ali.eq(3).find('li');
+	// 	// 	// 	alis.css('transition','');
+	// 	// 	// 	alis.attr('class','active');
 				
 				
-		// 	// }
+	// 	// 	// }
 			
-		// }					
-	];
+	// 	// }					
+	// ];
 	
-	//首页加载
-	function loading(){
-		var oLoading = $('.loading');
-		var imgArr = ['']
+	//入场动画时间
+	function animationShow(){
+		var alis = $ali.children();
+		alis.attr('data-wow-duration','2s');
+		//第一屏的git图延时显示
+		var oFiveGit = $ali.eq(0).children().eq(4);
+		setTimeout(function(){oFiveGit.show()},2000) 
 	}
 
+	animationShow();
+
+	//首页加载
+	function loading(){
+				var oLoading = $('.loading');
+				var imgArr = ['d58c73e63a9cadce237925de3d650c8d.jpg',
+					'b2aae62da16991b5924d82b50ca3ab9c.png',
+					'a0820c834c07a68b94ab1356d3593f41.jpg',
+					'0795c72dd691c63d63dce25f2170f4cd.gif',
+					'70f0c683cdede7d810e29bd7cf756b19.png',
+					'4ac3479cf06d85a1bda2ff87a6ec080a.png',
+					'sellotape.png',
+					'clamp.png'];
+				var iNum =0;
+				//图片加载
+				for(var i = 0;i<imgArr.length;i++){
+					
+					var oimg = new Image();
+					oimg.src = '../img/'+imgArr[i];
+					
+					oimg.onload = function(){
+						iNum++;
+						if(iNum==imgArr.length){
+							oLoading.animate({opacity:0},2000,function(){
+								oLoading.remove();
+							})
+						}
+						
+					};
+					
+						oimg.onerror = function(){
+							oLoading.animate({opacity:0},2000,function(){
+									oLoading.remove();
+								})
+						}
+					
+					}
+					
+				}
 
 	//遍历数组，让所有屏调用出场动画
 	
-	for(var i = 0;i<animations.length;i++){
-		console.log(i);
-		animations[i].outAnimate();
-	}
-	animations[0].inAnimate();
+	// for(var i = 0;i<animations.length;i++){
+	// 	console.log(i);
+	// 	animations[i].outAnimate();
+	// }
+	// animations[0].inAnimate();
 		
 })

@@ -5,77 +5,145 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=640,user-scalable=no" />
 		<title>小网页</title>
-		<link rel="stylesheet" type="text/css" href="./css/style.css">	
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	</head>
 	<body>
 		
 		<div class="main">
+			<!-- <div class="loading">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<div></div>
+			</div> -->
 			<div class="music">
 				<img src="img/music.png">
 				<audio src="img/music.mp3" loop="loop">				
 				</audio>
 			</div>
-			<div class="tips">
-					
+			<div class="tips">			
 			</div>
 			<ul id="list">
 				<li class="pageOne">
-					<img src="./img/page1/d58c73e63a9cadce237925de3d650c8d.jpg" class="component sectionOne" style="">
-					<div class="component sectionTwe" style="">
-						<img src="./img/page1/b2aae62da16991b5924d82b50ca3ab9c.png" style="">
+					<img src="./img/page1/d58c73e63a9cadce237925de3d650c8d.jpg" class="sectionOne">
+					<div class="sectionTwe">
+						<img src="./img/page1/b2aae62da16991b5924d82b50ca3ab9c.png">
 					</div>
-					<img src="./img/page1/4ac3479cf06d85a1bda2ff87a6ec080a.png" class="component animation-component sectionThree" style="">
-					<div class="component animation-component sectionFour" style="">
-						<img src="./img/page1/70f0c683cdede7d810e29bd7cf756b19.png" class="component" style="">
-						<img src="./img/page1/a0820c834c07a68b94ab1356d3593f41.jpg" class="component" style="">
+					<img src="./img/page1/4ac3479cf06d85a1bda2ff87a6ec080a.png" class="wow slideInRight sectionThree">
+					<div class="wow bounceInDown sectionFour">
+						<img src="./img/page1/70f0c683cdede7d810e29bd7cf756b19.png" class="">
+						<img src="./img/page1/a0820c834c07a68b94ab1356d3593f41.jpg" class="">
 					</div>
-					<div class="component animation-component sectionFive" style="">
-						<img src="./img/page1/0795c72dd691c63d63dce25f2170f4cd.gif" style="">
+					<div class="sectionFive">
+						<img src="./img/page1/0795c72dd691c63d63dce25f2170f4cd.gif">
 					</div>
-					<img src="./img/page1/clamp.png" class="animation-component sectionSix" style="">
-					<img src="./img/page1/sellotape.png" class="animation-component sectionSeven" style="">
-					<img src="./img/page1/6.png" class="sectionEight" style="">
-					<img src="./img/page1/2.png" class="sectionNine" style="">
-					<img src="./img/page1/3.png" class="sectionTen" style="">
-					<img src="./img/page1/1.png" class="sectionEleven" style="">
+					<img src="./img/page1/clamp.png" class="wow slideInLeft sectionSix">
+					<img src="./img/page1/sellotape.png" class="wow slideInRight sectionSeven">
+					<img src="./img/page1/6.png" class="sectionEight">
+					<img src="./img/page1/2.png" class="sectionNine">
+					<img src="./img/page1/3.png" class="sectionTen">
+					<img src="./img/page1/1.png" class="sectionEleven">
 					<img src="./img/page1/4.png" class="sectionTwelve" ">
 				</li>
-				<li class="pageTwo">
-					<ul class="li2Child">
-						<li><img src="./img/youshangjiao.png"></li>
-						<li class="photo cleanfix">
-							<img src="./img/fc0e702c7552859315062046ceb47da0.jpg">
-							<img src="./img/b406ae9139281f5677cada6e559228e9.png" alt="">
-						</li>
-						<li><img src="./img/b22dc83841fdb4c7b28df5a928181f5f.png"></li>
-						<li><img src="./img/0.png"></li>
-						<li></li>
-						<li></li>
-					</ul>
+				<li class="pageTwe">
+					<img src="./img/page2/d58c73e63a9cadce237925de3d650c8d.jpg" class="sectionOne">
+					<img src="./img/page2/b22dc83841fdb4c7b28df5a928181f5f.png" class="wow slideInRight sectionTwe">
+					<div class="sectionThree">
+						<img src="./img/page2/b406ae9139281f5677cada6e559228e9.png" class="">
+						<img src="./img/page2/fc0e702c7552859315062046ceb47da0.jpg" class="">
+					</div>
+					<img src="./img/page2/4254cec6680c17505daef8408b409059.png" class="sectionFour">
+					<img src="./img/page2/0.png" class="wow slideInLeft sectionFive">
+					<div class="lock can-unlock" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: 3000; pointer-events: none;">
+						<div style="position: absolute; overflow: hidden; top: 0px; left: 0px; right: 0px; bottom: 0px; opacity: 0.5;">
+							<img src="//static01.cloud7.com.cn/assets/099c6e1b/content/firstpage2/effect/66/guang.png" style="position: absolute; z-index: 0; top: 0px; left: 0px; width: 34px; height: 34px; margin: -17px; animation: keyframe20 3s linear 0s infinite both running;">
+							<div style="position: absolute; z-index: 1; top: 0px; left: 0px; width: 8px; height: 8px; margin: -4px; transform: translate3d(79px, 94px, 0px); border-radius: 8px; background: rgba(255, 255, 255, 0.0980392); animation: keyframe21 3s linear 0.2s infinite both running;">
+							</div>
+							<div style="position: absolute; z-index: 2; top: 0px; left: 0px; width: 54px; height: 54px; margin: -27px; transform: translate3d(118px, 140px, 0px); border-radius: 54px; background: rgba(255, 255, 255, 0.298039); animation: keyframe22 3s linear 0.4s infinite both running;">
+							</div>
+							<div style="position: absolute; z-index: 3; top: 0px; left: 0px; width: 88px; height: 88px; margin: -44px; transform: translate3d(158px, 187px, 0px); border-radius: 88px; background: rgba(255, 255, 255, 0.2); animation: keyframe23 3s linear 0.6s infinite both running;">
+							</div>
+							<div style="position: absolute; z-index: 4; top: 0px; left: 0px; width: 182px; height: 182px; margin: -91px; transform: translate3d(257px, 304px, 0px); border-radius: 182px; background: rgba(255, 255, 255, 0.0980392); animation: keyframe24 3s linear 0.8s infinite both running;">
+							</div>
+							<div style="position: absolute; z-index: 5; top: 0px; left: 0px; width: 130px; height: 130px; margin: -65px; transform: translate3d(266px, 316px, 0px); border-radius: 130px; background: rgba(255, 255, 255, 0.0980392); animation: keyframe25 3s linear 1s infinite both running;">
+							</div>
+							<div style="position: absolute; z-index: 6; top: 0px; left: 0px; width: 54px; height: 54px; margin: -27px; transform: translate3d(316px, 374px, 0px); border-radius: 54px; background: rgba(255, 255, 255, 0.298039); animation: keyframe26 3s linear 1.2s infinite both running;">
+							</div>
+							<div style="position: absolute; z-index: 7; top: 0px; left: 0px; width: 16px; height: 16px; margin: -8px; transform: translate3d(395px, 468px, 0px); border-radius: 16px; background: rgba(255, 255, 255, 0.0980392); animation: keyframe27 3s linear 1.4s infinite both running;">
+							</div>
+						</div>
+						<div style="position: absolute; top: 10%; left: 0px; width: 100%; height: 278px; overflow: hidden; z-index: 20; animation: keyframe31 5s ease-in-out both running;">
+							<div style="position: absolute; width: 100%; height: 100%; -webkit-mask-image: url(&quot;./img/page2/mask.png&quot;);  -webkit-mask-size: auto 100%; animation: keyframe30 3s linear both running;">
+							<img src="./img/page2/rainbow.png" style="position: absolute; top: 0px; right: 0px; height: 100%;">
+							</div>
+						</div>
+					</div>
 				</li>
+
 				<li class="pageThree">
-					<ul class="li3Child">
-						<img src="./img/e1.png">
-						<img src="./img/e2.png">
-						<img src="./img/e3.png">
-						<img src="./img/e4.png">
-						<img src="./img/e5-1.png">
-						<img src="./img/e6.png">
-						<div class="component"><img src="./img/6bca3da9ae0fa729ff97ad1530cda4f4.jpg"></div>
-						<img src="./img/6bca3da9ae0fa729ff97ad1530cda4f4.jpg">
-						<img src="./img/b1bf7f2d21256ae0e9b2e946167f95cf.png">
-					</ul>
+					<img src="./img/page3/d126c4c84a0df9e7ac0448c563f6c7eb.jpg" class="wow flipInX sectionOne">
+					<div class="wow slideInLeft sectionTwe">
+						<div >
+						</div>
+						<img src="./img/page3/9e3aa52f0bce29de6d51d0a9873539e6.jpg" class="">
+					</div>
+					<img src="./img/page3/b1bf7f2d21256ae0e9b2e946167f95cf.png" class="sectionThree">
+					<div class="lock can-unlock sectionFour">
+						<img src="./img/page3/leaf0.png" style="z-index: 7; position: absolute; width: 28px; transform: translate3d(319.968px, -40.228px, 0px) rotate3d(0, 0, 1, 204.777deg); opacity: 0.8128;">
+						<img src="./img/page3/leaf1.png" style="z-index: 7; position: absolute; width: 41px; transform: translate3d(319.944px, 36.7293px, 0px) rotate3d(0, 0, 1, -24.6609deg); opacity: 0.7774;">
+						<img src="./img/page3/leaf2.png" style="z-index: 7; position: absolute; width: 46.5px; transform: translate3d(151.425px, 17.9311px, 0px) rotate3d(0, 0, 1, 358.224deg); opacity: 0.8275;">
+						<img src="./img/page3/leaf0.png" style="z-index: 7; position: absolute; width: 28px; transform: translate3d(-347.038px, 448.268px, 0px) rotate3d(0, 0, 1, 292.16deg); opacity: 0.0382;">
+						<img src="./img/page3/leaf1.png" style="z-index: 7; position: absolute; width: 41px; transform: translate3d(110.023px, 437.672px, 0px) rotate3d(0, 0, 1, 146.741deg); opacity: 0.0438;">
+						<img src="./img/page3/leaf2.png" style="z-index: 7; position: absolute; width: 46.5px; transform: translate3d(279.21px, 423.325px, 0px) rotate3d(0, 0, 1, 80.6003deg); opacity: 0.1654;">
+						<img src="./img/page3/leaf0.png" style="z-index: 7; position: absolute; width: 28px; transform: translate3d(97.628px, -42.8944px, 0px) rotate3d(0, 0, 1, 296.688deg); opacity: 0.9795;">
+						<img src="./img/page3/leaf1.png" style="z-index: 7; position: absolute; width: 41px; transform: translate3d(136.43px, -14.1619px, 0px) rotate3d(0, 0, 1, 250.135deg); opacity: 0.8794;">
+						<img src="./img/page3/leaf2.png" style="z-index: 7; position: absolute; width: 46.5px; transform: translate3d(-10.358px, 392.789px, 0px) rotate3d(0, 0, 1, -6.92281deg); opacity: 0.1993;">
+						<img src="./img/page3/leaf0.png" style="z-index: 7; position: absolute; width: 28px; transform: translate3d(867.409px, 394.471px, 0px) rotate3d(0, 0, 1, -7.28235deg); opacity: 0.1829;">
+						<img src="./img/page3/leaf1.png" style="z-index: 7; position: absolute; width: 41px; transform: translate3d(-146.96px, 373.257px, 0px) rotate3d(0, 0, 1, -29.9126deg); opacity: 0.1751;">
+						<img src="./img/page3/leaf2.png" style="z-index: 7; position: absolute; width: 46.5px; transform: translate3d(-222.935px, 369.151px, 0px) rotate3d(0, 0, 1, -88.5733deg); opacity: 0.0831;">
+						<img src="./img/page3/leaf0.png" style="z-index: 7; position: absolute; width: 28px; transform: translate3d(-232.847px, 357.628px, 0px) rotate3d(0, 0, 1, 339.421deg); opacity: 0.2838;">
+						<img src="./img/page3/leaf1.png" style="z-index: 7; position: absolute; width: 41px; transform: translate3d(-179.922px, 343.361px, 0px) rotate3d(0, 0, 1, 328.75deg); opacity: 0.2224;">
+						<img src="./img/page3/leaf2.png" style="z-index: 7; position: absolute; width: 46.5px; transform: translate3d(623.421px, 336.43px, 0px) rotate3d(0, 0, 1, 295.383deg); opacity: 0.1283;">
+						<img src="./img/page3/leaf0.png" style="z-index: 7; position: absolute; width: 28px; transform: translate3d(544.244px, 334.973px, 0px) rotate3d(0, 0, 1, 187.661deg); opacity: 0.1864;">
+						<img src="./img/page3/leaf1.png" style="z-index: 7; position: absolute; width: 41px; transform: translate3d(26.2223px, 328.775px, 0px) rotate3d(0, 0, 1, 353.441deg); opacity: 0.1208;">
+						<img src="./img/page3/leaf2.png" style="z-index: 7; position: absolute; width: 46.5px; transform: translate3d(292.46px, 309.749px, 0px) rotate3d(0, 0, 1, 5.2042deg); opacity: 0.223;">
+						<img src="./img/page3/leaf0.png" style="z-index: 7; position: absolute; width: 28px; transform: translate3d(214.339px, 312.041px, 0px) rotate3d(0, 0, 1, 359.979deg); opacity: 0.2941;">
+						<img src="./img/page3/leaf1.png" style="z-index: 7; position: absolute; width: 41px; transform: translate3d(588.354px, 285.818px, 0px) rotate3d(0, 0, 1, 288.217deg); opacity: 0.2921;">
+						<img src="./img/page3/leaf2.png" style="z-index: 7; position: absolute; width: 46.5px; transform: translate3d(496.124px, 290.789px, 0px) rotate3d(0, 0, 1, -162.85deg); opacity: 0.4163;">
+						<img src="./img/page3/leaf0.png" style="z-index: 7; position: absolute; width: 28px; transform: translate3d(170.895px, 277.174px, 0px) rotate3d(0, 0, 1, 340.097deg); opacity: 0.4243;">
+						<img src="./img/page3/leaf1.png" style="z-index: 7; position: absolute; width: 41px; transform: translate3d(34.4149px, 258.001px, 0px) rotate3d(0, 0, 1, 239.311deg); opacity: 0.2749;">
+						<img src="./img/page3/leaf2.png" style="z-index: 7; position: absolute; width: 46.5px; transform: translate3d(598.343px, 256.048px, 0px) rotate3d(0, 0, 1, 268.324deg); opacity: 0.3374;">
+						<img src="./img/page3/leaf0.png" style="z-index: 7; position: absolute; width: 28px; transform: translate3d(141.158px, 242.414px, 0px) rotate3d(0, 0, 1, 62.3201deg); opacity: 0.2117;">
+						<img src="./img/page3/leaf1.png" style="z-index: 7; position: absolute; width: 41px; transform: translate3d(467.017px, 241.207px, 0px) rotate3d(0, 0, 1, 200.078deg); opacity: 0.2611;">
+						<img src="./img/page3/leaf2.png" style="z-index: 7; position: absolute; width: 46.5px; transform: translate3d(237.621px, 219.185px, 0px) rotate3d(0, 0, 1, -8.55469deg); opacity: 0.3922;">
+						<img src="./img/page3/leaf0.png" style="z-index: 7; position: absolute; width: 28px; transform: translate3d(-93.6073px, 227.698px, 0px) rotate3d(0, 0, 1, 356.973deg); opacity: 0.4629;">
+						<img src="./img/page3/leaf1.png" style="z-index: 7; position: absolute; width: 41px; transform: translate3d(-202.955px, 203.066px, 0px) rotate3d(0, 0, 1, -46.3276deg); opacity: 0.382;">
+						<img src="./img/page3/leaf2.png" style="z-index: 7; position: absolute; width: 46.5px; transform: translate3d(530.886px, 208.594px, 0px) rotate3d(0, 0, 1, 137.354deg); opacity: 0.5728;">
+					</div>
+					<img src="./img/page3/e1.png" class="sectionFive">
+					<img src="./img/page3/e2.png" class="sectionSix">
+					<img src="./img/page3/e3.png" class="sectionSeven">
+					<img src="./img/page3/e4.png" class="wow slideRight sectionEight">
+					<img src="./img/page3/e5.png" class="wow slideRight sectionNine">
+					<img src="./img/page3/e6.png" class="sectionTen">
+					<div class="danmaku-layer tips" style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; pointer-events: none; z-index: 4000;"></div>
 				</li>
 				<li class="pageFour">
-					<img src="./img/page4/05a172f756b89df12c70e89c82395e2a.jpg" class="component sectionOne">
+					<img src="./img/page4/05a172f756b89df12c70e89c82395e2a.jpg" class="sectionOne">
 					<div class="sectionTwo">
-						<img src="./img/page4/heart1.png" style="">
-						<img src="./img/page4/heart2.png" style="">
+						<img src="./img/page4/heart1.png">
+						<img src="./img/page4/heart2.png">
 					</div>
 					<div class="lock can-unlock sectionThree">
 						<canvas width="640" height="960"></canvas>
 					</div>
-					<svg version="1.1" id="图层_1" class="sectionFour" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 640 201.4" style="position: absolute; z-index: 200; stroke-dashoffset: 3000; -webkit-mask-image: url(&quot;./img/page4/7bg.png&quot;); -webkit-mask-size: 100% 100%; left: 0px; top: 0px; width: 415px; animation: keyframe39 10s linear 1s both running;" xml:space="preserve">
+					<svg version="1.1" id="图层_1" class="sectionFour" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 640 201.4" style="position: absolute; z-index: 200; stroke-dashoffset: 3000; -webkit-mask-image: url(&quot;./img/page4/7bg.png&quot;); -webkit-mask-size: 100% 100%; left: 0px; top: 0px; width: 641px; animation: keyframe41 10s linear 1s both running;" xml:space="preserve">
 						<style type="text/css">
 							.st0{fill:none;stroke:#E30A20;stroke-width:3;stroke-linecap:round;stroke-dasharray:3000;enable-background:new    ;}
 						</style>
@@ -86,7 +154,7 @@
 								c-50.2-9.4-56,43.8-35,53c28.1,12.3,52.5,2.4,60-3c18.1-13,40.2-52.5,33-50c-6.3,2.1-9.8,37.5-6,52c2.2,8.6,2.6,49.3-45,70"></path>
 						</g>
 					</svg>
-					<svg version="1.1" id="图层_1" class="sectionFive" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 640 190.5" style="position: absolute; z-index: 200; stroke-dashoffset: 3000; -webkit-mask-image: url(&quot;./img/page4/7.png&quot;); -webkit-mask-size: 100% 100%; left: 0px; top: 0px; width: 416px; animation: keyframe39 10s linear 1s both running;" xml:space="preserve">
+					<svg version="1.1" id="图层_1" class="sectionFive" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 640 190.5" style="position: absolute; z-index: 200; stroke-dashoffset: 3000; -webkit-mask-image: url(&quot;./img/page4/7.png&quot;); -webkit-mask-size: 100% 100%; left: 0px; top: 0px; width: 643px; animation: keyframe41 10s linear 1s both running;" xml:space="preserve">
 						<style type="text/css">
 							.st0{fill:none;stroke:#E30A20;stroke-width:3;stroke-linecap:round;stroke-dasharray:3000;}
 						</style>
@@ -97,130 +165,148 @@
 						</path>
 					</svg>
 					<div class="danmaku-layer tips sectionSix"></div>
-					<img src="./img/page4/b330faa3feabe65939a8d2e3b6b1ad75.png" class="component animation-component sectionSeven">
-					<img src="./img/page4/bf1e14c777c16716689c0e6d727a2305.png" class="component animation-component sectionEight">
-					<img src="./img/page4/c961995bbe604779360b5f5da4272ffe.png" class="component animation-component sectionNine">
-					<img src="./img/page4/607bcf3bd58187cb4879565db35e6709.png" class="component animation-component sectionTen">
-					<div class="component animation-component sectionEleven">
-						<img src="./img/page4/c7d7255a465f066906284606d2165e3d.png" class="component" style="">
-						<img src="./img/page4/fa58dd8ab932751ef8d2f49b83998ff5.jpg" class="component" style="">
+					<img src="./img/page4/b330faa3feabe65939a8d2e3b6b1ad75.png" class="sectionSeven">
+					<img src="./img/page4/bf1e14c777c16716689c0e6d727a2305.png" class="sectionEight">
+					<img src="./img/page4/c961995bbe604779360b5f5da4272ffe.png" class="sectionNine">
+					<img src="./img/page4/607bcf3bd58187cb4879565db35e6709.png" class="sectionTen">
+					<div class="sectionEleven">
+						<img src="./img/page4/c7d7255a465f066906284606d2165e3d.png" class="">
+						<img src="./img/page4/fa58dd8ab932751ef8d2f49b83998ff5.jpg" class="">
 					</div>
-					<img src="./img/page4/48c77f5eea8c1839a61ebe58b6776d32.png" class="component animation-component sectionTwelve">
-					<img src="./img/page4/588a14b4bd371eee1e828c116d0e7fac.png" class="component animation-component sectionThirteen">
+					<img src="./img/page4/48c77f5eea8c1839a61ebe58b6776d32.png" class="sectionTwelve">
+					<img src="./img/page4/588a14b4bd371eee1e828c116d0e7fac.png" class="sectionThirteen">
 				</li>
 				<li class="pageFive">
-					<div class="page">
-						<img src="./img/8d7f282cf9f5eabdd607b1e8eb870538.jpg" class="component animation-component sectionOne">
-						<img src="./img/4ed3dfcea9bd05a86a32accb091c96ac.jpg" class="component animation-component sectionTwe" >
-						<img src="./img/b1bb1b3f1fc9a9371c1ca9a9b47e4ff4.jpg" class="component animation-component sectionThree">
-						<img src="./img/1a0248c45794f3ee6904c7809d451834.jpg" class="component animation-component sectionFour">
-						<img src="./img/4fd398902c7815c4adfda89c675c3785.png" class="component animation-component sectionFive" >
-						<img src="./img/e38ed1738717ed0aecdd6a10e4288e22.png" class=" animation-component sectionSix" >
-						<img src="./img/e67edd00c5e4b6f73a0a8fb94e0b2976.png" class=" animation-component sectionSeven">
-						<img src="./img/page5/e1.png">
-						<img src="./img/page5/e2.png">
-						<img src="./img/page5/e3.png">
-						<img src="./img/page5/e4.png">
-						<img src="./img/page5/e5.png">
-						<img src="./img/page5/e6.png">
-						<div class="danmaku-layer tips" style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; pointer-events: none; z-index: 4000;">
-						</div>
+					<img src="./img/page5/8d7f282cf9f5eabdd607b1e8eb870538.jpg" class="sectionOne">
+					<img src="./img/page5/4ed3dfcea9bd05a86a32accb091c96ac.jpg" class="sectionTwo" >
+					<img src="./img/page5/b1bb1b3f1fc9a9371c1ca9a9b47e4ff4.jpg" class="sectionThree">
+					<img src="./img/page5/1a0248c45794f3ee6904c7809d451834.jpg" class="sectionFour">
+					<img src="./img/page5/4fd398902c7815c4adfda89c675c3785.png" class="sectionFive" >
+					<img src="./img/page5/e38ed1738717ed0aecdd6a10e4288e22.png" class=" sectionSix" >
+					<img src="./img/page5/e67edd00c5e4b6f73a0a8fb94e0b2976.png" class=" sectionSeven">
+					<img src="./img/page5/e1.png" class="sectionEight">
+					<img src="./img/page5/e2.png" class="sectionNine">
+					<img src="./img/page5/e3.png" class="sectionTen">
+					<img src="./img/page5/e4.png" class="sectionEleven">
+					<img src="./img/page5/e5.png" class="sectionTwelve">
+					<img src="./img/page5/e6.png" class="sectionThirteen">
+					<div class="danmaku-layer tips" style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; pointer-events: none; z-index: 4000;">
 					</div>
 				</li>
 				<li class="pageSix">
-					<img src="./img/page6/d58c73e63a9cadce237925de3d650c8d.jpg" class="component sectionOne">
-					<img src="./img/page6/1d8efc96327c1801d45440f038d13eb6.png" class="component animation-component sectionTwe" style="">
-					<div class="component unlock sectionThree">
-						<div class="component animation-component" style="">
-							<img src="./img/page6/2662e303b90472e15ae65d3f2a153b79.png" class="component">
-							<img src="./img/page6/ad1762885cb8f58143b2584ac9400db2.jpg" class="component" style=" ">
+					<img src="./img/page6/d58c73e63a9cadce237925de3d650c8d.jpg" class="sectionOne">
+					<img src="./img/page6/1d8efc96327c1801d45440f038d13eb6.png" class="sectionTwo">
+					<div class="sectionThree">
+						<div class="">
+							<img src="./img/page6/2662e303b90472e15ae65d3f2a153b79.png" class="sec_img_1">
+							<img src="./img/page6/ad1762885cb8f58143b2584ac9400db2.jpg" class="sec_img_2">
 						</div>
 					</div>
-					<div class="component animation-component sectionFour">
-						<img src="./img/page6/8d84ce00c0a38ddf02099a72a83d94d2.gif" style="">
+					<div class="sectionFour">
+						<img src="./img/page6/8d84ce00c0a38ddf02099a72a83d94d2.gif">
 					</div>
-					<div class="component animation-component sectionFive">
-						<img src="./img/page6/4e2208c7136a39fdf913684635257b50.gif" style="">
+					<div class="sectionFive">
+						<img src="./img/page6/4e2208c7136a39fdf913684635257b50.gif">
 					</div>
-					<div class="component animation-component sectionSix">
-						<img src="./img/page6/2995013d24b8930a09fbb55c9fa4886a.gif" style="">
+					<div class="sectionSix">
+						<img src="./img/page6/2995013d24b8930a09fbb55c9fa4886a.gif">
 					</div>
-					<img src="./img/page6/a353ed38d566bff64c42b1a0eda6f31f.png" class="component animation-component sectionSeven" style="">
-					<img src="./img/page6/note0.png" class="component sectionEight" style="">
-					<img src="./img/page6/arrow.png" class="component sectionNine" style="">
-					<img src="./img/heart/heart0.png" class="component sectionTen" style="">
-					<img src="./img/heart/heart1.png" class="component" style="">
-					<img src="./img/heart/heart2.png" class="component" style="">
-					<img src="./img/heart/heart3.png" class="component" style="">
-					<img src="./img/heart/heart4.png" class="component" style="">
-					<img src="./img/heart/heart5.png" class="component" style="">
-					<img src="./img/heart/heart0.png" class="component" style="">
-					<img src="./img/heart/heart1.png" class="component" style="">
-					<img src="./img/heart/heart2.png" class="component" style="">
-					<img src="./img/heart/heart3.png" class="component" style="">
-					<img src="./img/heart/heart4.png" class="component" style="">
-					<img src="./img/heart/heart5.png" class="component" style="">
+					<img src="./img/page6/a353ed38d566bff64c42b1a0eda6f31f.png" class="sectionSeven">
+					<img src="./img/page6/note0.png" class="sectionEight">
+					<img src="./img/page6/arrow.png" class="sectionNine">
+					<img src="./img/heart/heart0.png" class="sectionTen">
+					<img src="./img/heart/heart1.png" class="sectionEleven">
+					<img src="./img/heart/heart2.png" class="sectionTwelve">
+					<img src="./img/heart/heart3.png" class="sectionThirdteen">
+					<img src="./img/heart/heart4.png" class="sectionFourteen">
+					<img src="./img/heart/heart5.png" class="sectionFifteen">
+					<img src="./img/heart/heart0.png" class="sectionSixteen">
+					<img src="./img/heart/heart1.png" class="sectionSeventeen">
+					<img src="./img/heart/heart2.png" class="sectionEighteen">
+					<img src="./img/heart/heart3.png" class="sectionNineteen">
+					<img src="./img/heart/heart4.png" class="sectionTwenty">
+					<img src="./img/heart/heart5.png" class="sectionTwentyOne">
+					<div class="lock can-unlock" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: 3000; pointer-events: none;"><div style="position: absolute; overflow: hidden; top: 0px; left: 0px; right: 0px; bottom: 0px; opacity: 0.5;"><img src="//static01.cloud7.com.cn/assets/13e97dfd/content/firstpage2/effect/66/guang.png" style="position: absolute; z-index: 0; top: 0px; left: 0px; width: 34px; height: 34px; margin: -17px; animation: keyframe44 3s linear 0s infinite both running;"><div style="position: absolute; z-index: 1; top: 0px; left: 0px; width: 8px; height: 8px; margin: -4px; transform: translate3d(79px, 94px, 0px); border-radius: 8px; background: rgba(255, 255, 255, 0.0980392); animation: keyframe45 3s linear 0.2s infinite both running;"></div><div style="position: absolute; z-index: 2; top: 0px; left: 0px; width: 54px; height: 54px; margin: -27px; transform: translate3d(118px, 140px, 0px); border-radius: 54px; background: rgba(255, 255, 255, 0.298039); animation: keyframe46 3s linear 0.4s infinite both running;"></div><div style="position: absolute; z-index: 3; top: 0px; left: 0px; width: 88px; height: 88px; margin: -44px; transform: translate3d(158px, 187px, 0px); border-radius: 88px; background: rgba(255, 255, 255, 0.2); animation: keyframe47 3s linear 0.6s infinite both running;"></div><div style="position: absolute; z-index: 4; top: 0px; left: 0px; width: 182px; height: 182px; margin: -91px; transform: translate3d(257px, 304px, 0px); border-radius: 182px; background: rgba(255, 255, 255, 0.0980392); animation: keyframe48 3s linear 0.8s infinite both running;"></div><div style="position: absolute; z-index: 5; top: 0px; left: 0px; width: 130px; height: 130px; margin: -65px; transform: translate3d(266px, 316px, 0px); border-radius: 130px; background: rgba(255, 255, 255, 0.0980392); animation: keyframe49 3s linear 1s infinite both running;"></div><div style="position: absolute; z-index: 6; top: 0px; left: 0px; width: 54px; height: 54px; margin: -27px; transform: translate3d(316px, 374px, 0px); border-radius: 54px; background: rgba(255, 255, 255, 0.298039); animation: keyframe50 3s linear 1.2s infinite both running;"></div><div style="position: absolute; z-index: 7; top: 0px; left: 0px; width: 16px; height: 16px; margin: -8px; transform: translate3d(395px, 468px, 0px); border-radius: 16px; background: rgba(255, 255, 255, 0.0980392); animation: keyframe51 3s linear 1.4s infinite both running;"></div><div style="position: absolute; z-index: 8; top: 0px; left: 0px; width: 7px; height: 7px; margin: -3px; transform: translate3d(414px, 491px, 0px); border-radius: 7px; background: rgba(255, 255, 255, 0.298039); animation: keyframe52 3s linear 1.6s infinite both running;"></div><div style="position: absolute; z-index: 9; top: 0px; left: 0px; width: 40px; height: 40px; margin: -20px; transform: translate3d(454px, 538px, 0px); border-radius: 40px; background: rgba(255, 255, 255, 0.2); animation: keyframe53 3s linear 1.8s infinite both running;"></div></div><div style="position: absolute; top: 10%; left: 0px; width: 100%; height: 278px; overflow: hidden; z-index: 20; animation: keyframe31 5s ease-in-out both running;"><div style="position: absolute; width: 100%; height: 100%; -webkit-mask-image: url(&quot;//static01.cloud7.com.cn/assets/13e97dfd/content/firstpage2/effect/66/mask.png&quot;); -webkit-mask-position: 100% 0px; -webkit-mask-size: auto 100%; animation: keyframe30 3s linear both running;"><img src="//static01.cloud7.com.cn/assets/13e97dfd/content/firstpage2/effect/66/rainbow.png" style="position: absolute; top: 0px; right: 0px; height: 100%;"></div></div></div>
 					<div class="danmaku-layer tips" style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; pointer-events: none; z-index: 4000;">						
 					</div>
 				</li>
 				<li class="pageSeven">
-					<img src="./img/page7/bg.jpg" class="component sectionOne">
-					<img src="./img/page7/word.png" class="component animation-component sectionTwe">
-					<div class="component animation-component sectionThree">
-						<img src="./img/page7/photo1-bg.png" class="component" style="">
-						<img src="./img/page7/photo1.png" class="component" style="-webkit-mask-image: url(&quot;./img/page7/photo1.png&quot;);">
+					<img src="./img/page7/bg.jpg" class="sectionOne">
+					<img src="./img/page7/word.png" class="sectionTwo">
+					<div class="sectionThree">
+						<img src="./img/page7/photo1-bg.png" class="">
+						<img src="./img/page7/photo1.png" class="" style="-webkit-mask-image: url(&quot;./img/page7/photo1.png&quot;);">
 					</div>
-					<div class="component animation-component sectionFour">
-							<img src="./img/page7/photo2-bg.png" class="component" >
-							<img src="./img/page7/photo2.jpg" class="component" style="-webkit-mask-image: url(&quot;./img/page7/photo2.jpg&quot;); ">
+					<div class="sectionFour">
+							<img src="./img/page7/photo2-bg.png" class="" >
+							<img src="./img/page7/photo2.jpg" class="" style="-webkit-mask-image: url(&quot;./img/page7/photo2.jpg&quot;); ">
 					</div>
-					<div class="component animation-component sectionFive">
-						<img src="./img/page7/photo3-bg.png" class="component" style="">
-						<img src="./img/page7/photo3.jpg" class="component" style=" -webkit-mask-image: url(&quot;./img/page7/photo3.jpg&quot;);">
+					<div class="sectionFive">
+						<img src="./img/page7/photo3-bg.png" class="">
+						<img src="./img/page7/photo3.jpg" class="" style=" -webkit-mask-image: url(&quot;./img/page7/photo3.jpg&quot;);">
 					</div>
-					<img src="./img/page7/arrows1.png">
-					<img src="./img/page7/arrows2.png">
-					<img src="./img/page7/needle.png">
-					<img src="./img/page7/sellotape.png">
+					<img src="./img/page7/arrows1.png" class="sectionSix">
+					<img src="./img/page7/arrows2.png" class="sectionSeven">
+					<img src="./img/page7/needle.png" class="sectionEight">
+					<img src="./img/page7/sellotape.png" class="sectionNine">
 					<div class="danmaku-layer tips" style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; pointer-events: none; z-index: 4000;">
 					</div>
 				</li>
 				<li class="pageEight">
-					<img src="./img/page8/5c08c36b32e1979b98cb0bdb33d0b223.jpg" class="component">
-					<img src="./img/page8/0a714709089036be2dfce15478437045.png" class="component animation-component">
-					<img src="./img/page8/note.png" class="component">
-					<img src="./img/page8/boy.png" class="component">
-					<img src="./img/page8/girl.png" class="component" style="">
-					<img src="./img/page8/heart0.png" class="component" style="">
-					<img src="./img/page8/heart1.png" class="component" style="">
-					<img src="./img/page8/heart2.png" class="component" style="">
-					<img src="./img/page8/sun-face.png" class="component" style="">
-					<img src="./img/page8/bird0.png" class="component" style="">
-					<img src="./img/page8/bird1.png" class="component" style="">
-					<img src="./img/page8/bird2.png" class="component" style="">
-					<img src="./img/page8/sun.png" class="component" style="">
-					<img src="./img/page8/arrow.png" class="component" style="">
+					<img src="./img/page8/5c08c36b32e1979b98cb0bdb33d0b223.jpg" class="sectionOne">
+					<img src="./img/page8/0a714709089036be2dfce15478437045.png" class="sectionTwo">
+					<img src="./img/page8/note.png" class="sectionThree">
+					<img src="./img/page8/boy.png" class="sectionFour">
+					<img src="./img/page8/girl.png" class="sectionFive">
+					<img src="./img/page8/heart0.png" class="sectionSix">
+					<img src="./img/page8/heart1.png" class="sectionSeven">
+					<img src="./img/page8/heart2.png" class="sectionEight">
+					<img src="./img/page8/sun-face.png" class="sectionNine">
+					<img src="./img/page8/bird0.png" class="sectionTen">
+					<img src="./img/page8/bird1.png" class="sectionEleven">
+					<img src="./img/page8/bird2.png" class="sectionTwelve">
+					<img src="./img/page8/sun.png" class="sectionThirteen">
+					<img src="./img/page8/arrow.png" class="sectionFourteen">
 				</li>
 				<li class="pageNine">
-					<img src="./img/page9/80eee1b7e7215a5253cc0df5061e6528.png" class="component animation-component">
-					<img src="./img/page9/bcd571972a4c69e8d5549f0524cea5b3.png" class="component animation-component">
-					<img src="./img/page9/df4e4cb5c713cfc133381c01747eb6fa.png" class="component">
-					<img src="./img/page9/9e87266642ab18185d33c95e2a89e68a.png" class="component">
-					<img src="./img/page9/c22127cf3c515479e66dc2d93da0f942.png" class="component">
-					<img src="./img/page9/a93d2a605344abaccaedff591a478b35.png" class="component animation-component">
-					<img src="./img/page9/2bcb0bfda87eb89a09096c7c2f94a1a7.png" class="component animation-component">
-					<img src="./img/page9/1.png" class="animation-component">
-					<img src="./img/page9/2.png" class="animation-component">
-					<img src="./img/page9/3.png" class="animation-component">
-					<img src="./img/page9/4.png" class="animation-component">
-					<img src="./img/page9/5.png" class="animation-component">
+					<img src="./img/page9/80eee1b7e7215a5253cc0df5061e6528.png" class="sectionOne">
+					<img src="./img/page9/bcd571972a4c69e8d5549f0524cea5b3.png" class="sectionTwo">
+					<img src="./img/page9/df4e4cb5c713cfc133381c01747eb6fa.png" class="sectionThree">
+					<img src="./img/page9/9e87266642ab18185d33c95e2a89e68a.png" class="sectionFour">
+					<img src="./img/page9/c22127cf3c515479e66dc2d93da0f942.png" class="sectionFive">
+					<img src="./img/page9/a93d2a605344abaccaedff591a478b35.png" class="sectionSix">
+					<img src="./img/page9/2bcb0bfda87eb89a09096c7c2f94a1a7.png" class="sectionSeven">
+					<img src="./img/page9/1.png" class="sectionEight">
+					<img src="./img/page9/2.png" class="sectionNine">
+					<img src="./img/page9/3.png" class="sectionTen">
+					<img src="./img/page9/4.png" class="sectionEleven">
+					<img src="./img/page9/5.png" class="sectionTwelve">
 				</li>
 			</ul>
 			<div id="arrow"></div>
 		</div>
 
+
 		<script src="./lib/jquery-2.1.3.min.js"></script>
 		<script type="text/javascript" src="./js/script.js"></script>
 		<script type="text/javascript" src="./lib/wow.min.js"></script>
+		<script>
+			var wow = new WOW({
+   				boxClass: 'wow',
+			    animateClass: 'animated',
+			    offset: 0,
+			    mobile: true,
+			    live: true
+			});
+			wow.init();
+
+			$(function(){
+				$.fn.leaf0({ 
+					minSize: 5,		//雪花的最小尺寸
+					maxSize: 50, 	//雪花的最大尺寸
+					newOn: 300		//雪花出现的频率 这个数值越小雪花越多
+				});
+	});
+		</script>
 	</body>
 </html>

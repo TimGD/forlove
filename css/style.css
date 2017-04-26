@@ -6,218 +6,738 @@ img{order:0;}
 .main{width: 640px;height: 960px;position: relative;overflow:hidden;}
 
 /* 入场动画 */
+/* 透明 */
+@keyframes forOpacity{
+	0%{opacity: 0; }
+	100%{opacity: 1;}
+}
 /* 左直出 */
 @keyframes forLeft{
 	0%{opacity: 0; transform: translate(-200px,0) }
 	100%{opacity: 1; transform: translate(0, 0);}
 }
-/* @keyframes forRight{
-	0%{}
+@keyframes forRight{
+	0%{opacity: 0; transform: translate(200px, 0)}
+	100%{opacity: 1; transform: translate(0, 0)}
 }
- */
+@keyframes forUp{
+	0%{opacity: 0; top: -20px; }
+	100%{opacity: 1;}
+}
+@keyframes forDown{
+	0%{opacity: 0; bottom: -20px; }
+	100%{opacity: 1;}
+}
+@keyframes forLeftUp{
+	0%{opacity:  0; transform: rotate(-45deg)}
+	100%{opacity: 1; transform: matrix3d(0.9976, -0.0698, 0, 0, 0.0698, 0.9976, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);}
+}
+@keyframes D3X{
+	0%{opacity:0;transform: rotateX(-80deg)}
+	25%{opacity: 1;transform: rotateX(-60deg)}
+	100%{opacity: 1;transform: rotateX(0)}
+}
+@keyframes keyframe20{
+	0% {
+    	opacity: 1;
+   		transform: translate3d(138px, 164px, 0px) scale3d(1, 1, 1);
+	}
+	50% {
+	    opacity: 0.5;
+	    transform: translate3d(138px, 164px, 0px) scale3d(0.9, 0.9, 0.9);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translate3d(138px, 164px, 0px) scale3d(1, 1, 1);
+	}
+}
+@keyframes keyframe21{
+	0% {
+	    opacity: 1;
+	    transform: translate3d(79px, 94px, 0px) scale3d(1, 1, 1);
+	}
+	50% {
+	    opacity: 0.5;
+	    transform: translate3d(79px, 94px, 0px) scale3d(0.9, 0.9, 0.9);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translate3d(79px, 94px, 0px) scale3d(1, 1, 1);
+	}
+}
+@keyframes keyframes22{
+	0% {
+	    opacity: 1;
+	    transform: translate3d(118px, 140px, 0px) scale3d(1, 1, 1);
+	}
+	50% {
+	    opacity: 0.5;
+	    transform: translate3d(118px, 140px, 0px) scale3d(0.9, 0.9, 0.9);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translate3d(118px, 140px, 0px) scale3d(1, 1, 1);
+	}
+}
+@keyframes keyframes23{
+	0% {
+	    opacity: 1;
+	    transform: translate3d(158px, 187px, 0px) scale3d(1, 1, 1);
+	}
+	50% {
+	    opacity: 0.5;
+	    transform: translate3d(158px, 187px, 0px) scale3d(0.9, 0.9, 0.9);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translate3d(158px, 187px, 0px) scale3d(1, 1, 1);
+	}
+}
+@keyframes keyframes24{
+	0% {
+	    opacity: 1;
+	    transform: translate3d(257px, 304px, 0px) scale3d(1, 1, 1);
+	}
+	50% {
+	    opacity: 0.5;
+	    transform: translate3d(257px, 304px, 0px) scale3d(0.9, 0.9, 0.9);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translate3d(257px, 304px, 0px) scale3d(1, 1, 1);
+	}
+}
+@keyframes keyframes25{
+	0% {
+	    opacity: 1;
+	    transform: translate3d(266px, 316px, 0px) scale3d(1, 1, 1);
+	}
+	50% {
+	    opacity: 0.5;
+	    transform: translate3d(266px, 316px, 0px) scale3d(0.9, 0.9, 0.9);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translate3d(266px, 316px, 0px) scale3d(1, 1, 1);
+	}
+}
+@keyframes keyframes26{
+	0% {
+	    opacity: 1;
+	    transform: translate3d(316px, 374px, 0px) scale3d(1, 1, 1);
+	}
+	50% {
+	    opacity: 0.5;
+	    transform: translate3d(316px, 374px, 0px) scale3d(0.9, 0.9, 0.9);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translate3d(316px, 374px, 0px) scale3d(1, 1, 1);
+	}
+}
+@keyframes keyframes27{
+	0% {
+	    opacity: 1;
+	    transform: translate3d(395px, 468px, 0px) scale3d(1, 1, 1);
+	}
+	50% {
+	    opacity: 0.5;
+	    transform: translate3d(395px, 468px, 0px) scale3d(0.9, 0.9, 0.9);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translate3d(395px, 468px, 0px) scale3d(1, 1, 1);
+	}
+}
+@keyframes keyframe30{
+	0%{-webkit-mask-position: 100% 0;}
+	100% {
+	    -webkit-mask-position: 0 0;
+	}
+}
+@keyframes keyframe31{
+	0%{width: 100%;}
+	100% {
+	    width: 100%;
+	}
+}
+@keyframes keyframe34{
+	50% {
+	    transform: translate3d(-77px, 0px, 0px);
+	}
+}
+/* @keyframes keyframe40{
+	50% {
+    	transform: translate3d(0px, -8px, 0px);
+	}
+} */
+@keyframes keyframe39{
+	50% {
+	    transform: scale(1.3, 1);
+	}
+}
+@keyframes keyframe40{
+	50% {
+	    transform: translate3d(0px, 15px, 0px);
+	}
+}
+
+@keyframes keyframe41{
+	100%{
+    stroke-dashoffset: 0;}
+}
+@keyframes keyframe42{
+	0% {
+	    transform: translate3d(-50px, 736px, 0px);
+	}
+	25% {
+		opacity: 1;
+	    transform: translate3d(40px, 552px, 0px);
+	}
+	50% {
+	    transform: translate3d(-30px, 368px, 0px);
+	}
+	75% {
+	    transform: translate3d(15px, 184px, 0px);
+	}
+	100% {
+		opacity: 1;
+	    transform: translate3d(0px, 0px, 0px);
+	}
+}
+@keyframes keyframe43{
+	0% {
+	    transform: translate3d(50px, 736px, 0px);
+	}
+	25% {
+		opacity: 1;
+	    transform: translate3d(-40px, 552px, 0px);
+	}
+	50% {
+	    transform: translate3d(30px, 368px, 0px);
+	}
+	75% {
+	    transform: translate3d(-15px, 184px, 0px);
+	}
+	100% {
+		opacity: 1;
+	    transform: translate3d(0px, 0px, 0px);
+	}
+}
+
+@keyframes keyframe53{
+	0%{ opacity:0; transform: scale(0.5, 1);}
+	30%{opacity:1; transform: scale(0.7, 1);}
+	100%{transform: scale(1, 1);}
+}
+@keyframes keyframe54{
+	0%{ opacity: 0; transform: translate(-70px, 0) }
+	100%{opacity: 1; transform: translate(0, 0)}
+}
+@keyframes keyframe55{
+	0%{opacity: 0; transform: translate(70px, 0)}
+	100%{opacity: 1; transform: translate(0px, 0)}
+}
+@keyframes keyframe56{
+	0% {
+	    transform: scale(0.5, 0.5);
+	}
+	60% {
+	    opacity: 1;
+	    transform: scale(1, 1);
+	}
+	70% {
+	    opacity: 1;
+	    transform: rotateZ(5deg);
+	}
+	80% {
+	    opacity: 1;
+	    transform: rotateZ(-5deg);
+	}
+	90% {
+	    opacity: 1;
+	    transform: rotateZ(5deg);
+	}
+	100% {
+	    opacity: 0;
+	}
+}
+@keyframes keyframe57{
+	0% {
+	    opacity: 0;
+	    transform: scale(0.5, 0.5) rotateZ(0deg);
+	}
+	30% {
+	    opacity: 1;
+	    transform: scale(1, 1) rotateZ(0deg);
+	}
+	60% {
+	    opacity: 1;
+	    transform: scale(1, 1) rotateZ(360deg);
+	}
+	100% {
+	    opacity: 0;
+	    transform: scale(0.5, 0.5) rotateZ(360deg);
+	}
+}
+@keyframes keyframe58{
+	0.1%{
+		opacity: 1;
+	}
+	30% {
+	    opacity: 1;
+	    transform: rotateZ(10deg);
+	}
+	70% {
+	    opacity: 1;
+	    transform: rotateZ(-10deg);
+	}
+	100% {
+	    opacity: 1;
+	    transform: rotateZ(-10deg);
+	}
+}
+@keyframes keyframe59{
+	0%{opacity: 0; transform-origin: 0 100%; transform: rotate(-45deg);}
+	20%{opacity: 1; transform-origin: 0 100%; transform: rotate(-36deg);}
+	100%{opacity: 1; transform-origin: 0 100%; transform: rotate(0);}
+}
+
+@keyframes keyframe60{
+	0% {
+	    opacity: 0;
+	    transform: scale3d(2, 2, 2);
+	}
+	100% {
+	    opacity: 1;
+	    transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes keyframe61{
+	0%{opacity:0; transform: rotate(-45deg); transform-origin: 0 100%;}
+	100%{opacity:1; transform: matrix3d(0.9786, -0.2059, 0, 0, 0.2059, 0.9786, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);transform-origin: 0 100%;}
+}
+@keyframes keyframe62{
+	0%{opacity:0; transform: rotate(-45deg); transform-origin: 0 100%;}
+	100%{opacity:1; transform: rotate(0);transform-origin: 0 100%;}
+}
+@keyframes keyframe63{
+	0% {
+	    opacity: 0;
+	    transform: scale3d(-10, 10, 2);
+	}
+	100% {
+	    opacity: 1;
+	    transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes keyframe64{}
+@keyframes keyframe65{}
+@keyframes keyframe66{}
+
+@keyframes keyframe70{
+	0%{opacity: 0; transform: translate(0, -100px) }
+	100%{opacity: 1;  transform: matrix3d(0.9976, -0.0697, 0, 0, 0.0697, 0.9976, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);}
+}
+@keyframes keyframe71{
+	0%{opacity: 0; transform: translate(200px, 0); }
+	100%{opacity: 1;  transform: matrix3d(0.9945, 0.1045, 0, 0, -0.1045, 0.9945, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);}
+}
+@keyframes keyframe72{
+	0%{opacity: 0; transform: translate(0, 100px) }
+	100%{opacity: 1;  transform: matrix3d(0.9945, -0.1045, 0, 0, 0.1045, 0.9945, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);}
+}
+@keyframes keyframe73{
+	0% {
+	    opacity: 0;
+	    transform: scale(1.8);
+	}
+	100% {
+	    opacity: 1;
+	    transform: scale(1);
+	}
+}
+@keyframes keyframe76{
+	0% {
+	    transform: translate(8px, 0px);
+	}
+	5% {
+	    transform: translate(-8px, 0px);
+	}
+	10% {
+	    transform: translate(5px, 0px);
+	}
+	15% {
+	    transform: translate(-3px, 0px);
+	}
+	20% {
+	    transform: translate(9px, 0px);
+	}
+	100% {
+	    transform: translate(8px, 0px);
+	}
+}
+
+@keyframes keyframe80{
+	0% {
+	    opacity: 1;
+	    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 0deg);
+	}
+	50% {
+	    opacity: 1;
+	    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 4deg);
+	}
+	100% {
+	    opacity: 1;
+	    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 0deg);
+	}
+}
+@keyframes keyframe81{
+	0% {
+	    opacity: 1;
+	    transform: translate3d(0px, 0px, 0px);
+	}
+	50% {
+	    opacity: 1;
+	    transform: translate3d(0px, -2px, 0px);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translate3d(0px, 0px, 0px);
+	}
+}
+@keyframes keyframe82{
+	0% {
+	    opacity: 0;
+	    transform: translate3d(100%, 0px, 0px);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translate3d(0px, 0px, 0px);
+	}
+}
+@keyframes keyframe83{
+	0% {
+    	opacity: 1;
+    	transform: translate3d(0px, 0px, 0px);
+	}
+	50% {
+	    opacity: 1;
+	    transform: translate3d(0px, -2px, 0px);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translate3d(0px, 0px, 0px);
+	}
+}
+@keyframes keyframe84{
+	0% {
+	   	opacity: 1;
+	    transform: rotate3d(0, 0, 1, -10deg);
+	}
+	10% {
+	    opacity: 1;
+	    transform: rotate3d(0, 0, 1, 10deg);
+	}
+	20% {
+	    opacity: 1;
+	    transform: rotate3d(0, 0, 1, -10deg);
+	}
+	30% {
+	    opacity: 1;
+	    transform: rotate3d(0, 0, 1, 10deg);
+	}
+	40% {
+	    opacity: 1;
+	    transform: rotate3d(0, 0, 1, -10deg);
+	}
+	100% {
+	    opacity: 1;
+	    transform: rotate3d(0, 0, 1, -10deg);
+	}
+}
+@keyframes keyframe85{
+	0%{opacity:0; transform: scale(0.3, 0.3);}
+	100%{opacity: 1; transform: scale(1,1);}
+}
+@keyframes keyframe86{
+
+}
+
+@keyframes keyframe90{
+	0%{ opacity: 0; transform: scale3d(0.3, 0.3, 0.5) }
+	50%{ opacity: 1; transform: scale3d(1.2,1.3,1.2) }
+	100%{opacity: 1; transform: scale3d(1, 1,1)}
+}
+@keyframes keyframe91{
+	0%{ opacity: 0; transform: scale3d(0.3, 0.3, 0.5) }
+	100%{opacity: 1; transform: scale3d(1, 1,1)}
+}
 /* 连续动画 */
 /* 向上飘 */
 @keyframes forUp1{
-	0%{}
-	20%{}
-	50%{}
-	80%{}
-	100%{}
+	0% {
+	    opacity: 0;
+	    transform: scale(0) translate3d(0px, 0px, 0px);
+	}
+	25% {
+	    opacity: 1;
+	    transform: scale(1) translate3d(0px, -4px, 0px);
+	}
+	50% {
+	    opacity: 1;
+	    transform: scale(1) translate3d(0px, -12px, 0px);
+	}
+	100% {
+	    opacity: 0;
+	    transform: scale(1) translate3d(0px, -30px, 0px);
+	}
+	12% {
+	    opacity: 0.5;
+	    transform: scale(0.8) translate3d(0px, -4px, 0px);
+	}
+	37% {
+	    opacity: 1;
+	    transform: scale(1) translate3d(0px, -6px, 0px);
+	}
 }
 @keyframes forUp2{
-	0%{opacity:0; transform: translate(0, length)}
-	20%{}
-	50%{}
-	80%{}
-	100%{opacity:1;}
+	0% {
+	    opacity: 0;
+	    transform: scale(0) translate3d(0px, 0px, 0px);
+	}
+	25% {
+	    opacity: 1;
+	    transform: scale(1) translate3d(0px, -6px, 0px);
+	}
+	50% {
+	    opacity: 1;
+	    transform: scale(1) translate3d(0px, -19px, 0px);
+	}
+	100% {
+	    opacity: 0;
+	    transform: scale(1) translate3d(0px, -46px, 0px);
+	}
+	12% {
+	    opacity: 0.5;
+	    transform: scale(0.8) translate3d(0px, -6px, 0px);
+	}
+	37% {
+	    opacity: 1;
+	    transform: scale(1) translate3d(0px, -9px, 0px);
+	}
 }
 @keyframes forUp3{
-	0%{}
-	20%{}
-	50%{}
-	80%{}
-	100%{}
+	0% {
+	    opacity: 0;
+	    transform: translate3d(0px, 0px, 0px);
+	}
+	25% {
+	    opacity: 1;
+	    transform: translate3d(0px, -79px, 0px);
+	}
+	50% {
+	    opacity: 1;
+	    transform: translate3d(0px, -158px, 0px);
+	}
+	100% {
+	    opacity: 0;
+	    transform: translate3d(0px, -200px, 0px);
+	}
+	/* 12% {
+	    opacity: 0.5;
+	    transform: translate3d(0px, -130px, 0px);
+	}
+	37% {
+	    opacity: 1;
+	    transform:  translate3d(0px, -58px, 0px);
+	} */
 }
 
 
 /*#list{width: 100%;height: 100%;}*/
-#list>li{width: 100%;height: 960px;position: absolute;left: 0;top: 0;background-repeat: no-repeat;
-background-size:cover;-webkit-background-size: cover;display: none;z-index: 5;}
+#list>li{position: absolute; left: 0px; top: 0px; overflow: hidden; background: white; z-index: 2; width: 640px; height: 960px;display: none;}
 
-#list>li{position: absolute;}
 /*第一屏*/
-#list .pageOne{left: 0px; top: 0px; overflow: hidden; background: white; z-index: 2; width: 640px; height: 960px; display: block;}
+	#list .pageOne{display: block; z-index:5;}
 
-#list .pageOne>img:nth-child(1){position: absolute; display: block; left: -181px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;
-}
-#list .pageOne>div:nth-child(2){overflow: hidden; position: absolute; display: block; left: 253px; top: 34px; width: 128px; height: 80px; z-index: 103; opacity: 1;}
-#list .pageOne>img:nth-child(3){position: absolute; display: block; left: 179px; top: 700px; width: 430px; height: 83px; z-index: 301; opacity: 1;}
-#list .pageOne>div:nth-child(4){background: transparent; position: absolute; display: block; left: 0px; top: 88px; width: 640px; height: 508px; z-index: 102; opacity: 1;}
-#list .pageOne>div:nth-child(5){overflow: hidden; position: absolute; display: block; left: 179px; top: 490px; width: 199px; height: 201px; z-index: 405; opacity: 1;}
-#list .pageOne>img:nth-child(6){z-index: 200; position: absolute; top: 581px; left: 6px; width: 100px; height: 80px; opacity: 1;}
-#list .pageOne>img:nth-child(7){z-index: 200; position: absolute; top: 50px; left: 436px; width: 181px; height: 54px;}
-#list .pageOne>img:nth-child(8){position: absolute; bottom: 90px; left: 70px; width: 26px; height: 31px; z-index: 104; animation: keyframe33 3s linear both running;}
-#list .pageOne>img:nth-child(9){position: absolute; bottom: 90px; left: 70px; width: 59px; height: 59px; z-index: 104; animation: keyframe32 3s linear both running;}
-#list .pageOne>img:nth-child(10){position: absolute; bottom: 90px; left: 69px; width: 46px; height: 42px; z-index: 104; animation: keyframe10 3s linear both running;}
-#list .pageOne>img:nth-child(11){position: absolute; bottom: 90px; left: 70px; width: 40px; height: 39px; z-index: 104; animation: keyframe11 3s linear both running;}
-#list .pageOne>img:nth-child(12){position: absolute; bottom: 90px; left: 70px; width: 37px; height: 33px; z-index: 104; animation: keyframe32 3s linear both running;}
+	#list .pageOne .sectionOne{position: absolute; display: block; left: -181px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;
+	}
+	#list .pageOne .sectionTwe{overflow: hidden; position: absolute; display: block; left: 253px; top: 34px; width: 128px; height: 80px; z-index: 103; opacity: 1;}
+	#list .pageOne .sectionThree{position: absolute; display: block; left: 179px; top: 700px; width: 430px; height: 83px;} 
+	#list .pageOne .sectionFour{background: transparent; position: absolute; display: block; left: 0px; top: 88px; width: 640px; height: 508px; z-index: 102; opacity: 1;}
+	#list .pageOne .sectionFive{overflow: hidden; position: absolute; display: none; left: 179px; top: 490px; width: 199px; height: 201px; z-index: 405; opacity: 1; animation: forLeft 2s linear}
+	#list .pageOne .sectionSix{z-index: 200; position: absolute; top: 581px; left: 6px; width: 100px; height: 80px; opacity: 1;}
+	#list .pageOne .sectionSeven{z-index: 200; position: absolute; top: 50px; left: 436px; width: 181px; height: 54px;}
+	#list .pageOne .sectionEight{position: absolute; bottom: 90px; left: 70px; width: 26px; height: 31px; z-index: 104; animation: forUp3 3s linear 1.98s infinite both running;}
+	#list .pageOne .sectionNine{position: absolute; bottom: 90px; left: 70px; width: 59px; height: 59px; z-index: 104; animation: forUp3 3.2s linear infinite both running;}
+	#list .pageOne .sectionTen{position: absolute; bottom: 90px; left: 69px; width: 46px; height: 42px; z-index: 104; animation: forUp3 3.5s ease-in-out 0.4s infinite both running;}
+	#list .pageOne .sectionEleven{position: absolute; bottom: 90px; left: 70px; width: 40px; height: 39px; z-index: 104; animation: forUp3 3s ease-out 0.5s infinite both running;}
+	#list .pageOne .section{position: absolute; bottom: 90px; left: 70px; width: 37px; height: 33px; z-index: 104; animation: forUp3 3.8s ease-in 2.31s infinite both running;}
 
-#list .pageOne .sectionTwe>img{height: 80px; width: 130px; margin-left: -1px; margin-top: 0px;}
+	#list .pageOne .sectionTwe>img{height: 80px; width: 130px; margin-left: -1px; margin-top: 0px;}
 
-#list .pageOne .sectionFour>img:nth-child(1){position: absolute; display: block; left: 0px; top: 0px; width: 640px; height: 508px; z-index: 0; opacity: 1;}
-#list .pageOne .sectionFour>img:nth-child(2){overflow: hidden; box-sizing: border-box; -webkit-mask-image: url("http://img01.cloud7.com.cn/4483bc59de576d66e66d130abb18742f.png"); -webkit-mask-size: 624px 470px; position: absolute; display: block; left: 8px; top: -2px; width: 624px; height: 470px; z-index: 0; opacity: 1;}
+	#list .pageOne .sectionFour>img:nth-child(1){position: absolute; display: block; left: 0px; top: 0px; width: 640px; height: 508px; z-index: 0; opacity: 1;}
+	#list .pageOne .sectionFour>img:nth-child(2){overflow: hidden; box-sizing: border-box; -webkit-mask-image: url("../img/page1/4483bc59de576d66e66d130abb18742f.png"); -webkit-mask-size: 624px 470px; position: absolute; display: block; left: 8px; top: -2px; width: 624px; height: 470px; z-index: 0; opacity: 1;}
 
-#list .pageOne .sectionFive>img{height: 200px; width: 200px; margin-left: 0px; margin-top: 2px;}
+	#list .pageOne .sectionFive>img{height: 200px; width: 200px; margin-left: 0px; margin-top: 2px;}
 
 /*第二屏*/
-#list .li2Child>li:nth-child(1){position:absolute; top:0; right:0; z-index: 101;}
-#list .li2Child>li:nth-child(2){width: 620px; height:850px; border-radius: 40px; position:absolute; top:60px; left:35px; z-index: 100;overflow: hidden; transform-origin:0 100%; transform:rotate(-4deg);}
-#list .li2Child>li:nth-child(3){width:400px;position:absolute; top:980px; right: 10px;}
-#list .li2Child>li:nth-child(4){position: absolute; top: 950px; opacity: 1;}
+	#list .pageTwe{z-index: 2;}
 
-.li2Child .photo>img:nth-child(1){position: absolute; z-index:1;}
-.li2Child .photo>img:nth-child(2){position:absolute; z-index:2; opacity:0.2;}
-#list .li2Child>li>img{width:100%;}
+	#list .pageTwe>.sectionOne{position: absolute; display: block; left: -181px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;}
+	#list .pageTwe>.sectionTwe{position: absolute; display: block; left: 232px; top: 976px; width: 399px; height: 88px; z-index: 301; opacity: 1;}	
+	#list .pageTwe>.sectionThree{background: transparent; position: absolute; display: block; left: 30px; top: 40px; width: 624px; height: 861px; z-index: 102; opacity: 1; transform: matrix3d(0.9976, -0.0698, 0, 0, 0.0698, 0.9976, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); animation: forLeftUp 1s linear; transform-origin:0 100%; }
+	#list .pageTwe>.sectionFour{position: absolute; display: block; left: 448px; top: 0px; width: 198px; height: 235px; z-index: 103; opacity: 1;}
+	#list .pageTwe>.sectionFive{position: absolute; display: block; left: 0px; top: 950px; width: 124px; height: 54px; z-index: 150;}
 
+	#list .pageTwe .sectionThree>img:nth-child(1){position: absolute; display: block; left: 0px; top: 0px; width: 624px; height: 861px; z-index: 0; opacity: 1;}
+	#list .pageTwe .sectionThree>img:nth-child(2){overflow: hidden; box-sizing: border-box; -webkit-mask-image: url("../img/page2/cf64c868a9b16291640d7671a42f1a8c.png"); -webkit-mask-size: 626px 861px; position: absolute; display: block; left: 3px; top: 6px; width: 626px; height: 861px; z-index: 0; opacity: 1;}
 
 /* 第三屏 */
-#list .li3Child>img:nth-child(1){position: absolute; left: 40px; top: 670px; width: 74px; z-index: 200; opacity: 1; animation: keyframe38 2s infinite both running;}
-#list .li3Child>img:nth-child(2){position: absolute; left: 17px; top: 827px; width: 97px; z-index: 210; opacity: 1; animation: keyframe38 2s infinite both running;}
-#list .li3Child>img:nth-child(3){position: absolute; left: 22px; top: 1007px; width: 75px; z-index: 200; opacity: 1; animation: keyframe39 2s infinite both running;}
-#list .li3Child>img:nth-child(4){position: absolute; left: 476px; top: 34px; width: 56px; z-index: 210; opacity: 1; animation: keyframe40 2s infinite both running;}
-#list .li3Child>img:nth-child(5){position: absolute; left: 502px; top: 156px; width: 96px; z-index: 210; opacity: 1; animation: keyframe40 2s infinite both running;}
-#list .li3Child>img:nth-child(6){position: absolute; left: 528px; top: 88px; width: 92px; z-index: 200; opacity: 1; animation: keyframe34 10s infinite both running;}
-#list .li3Child>img:nth-child(8){overflow: hidden; box-sizing: border-box; border: 1px solid rgb(66, 59, 117); border-radius: 9px; position: absolute; display: block; left: 60px; top: 494px; width: 518px; height: 385px; z-index: 101; opacity: 1;}
-#list .li3Child>img:nth-child(9){position: absolute; display: block; left: 230px; top: 919px; width: 221px; height: 85px; z-index: 303; opacity: 1;}
-#list .li3Child .component{background: rgb(255, 232, 238); overflow: hidden; box-sizing: border-box; border: 0px solid transparent; border-radius: 19px; position: absolute; display: block; left: 20px; top: 100px; width: 460px; height: 460px; z-index: 102; opacity: 1;}
-#list .li3Child .component>img{overflow: hidden; box-sizing: border-box; border: 1px solid rgb(66, 59, 117); border-radius: 9px; position: absolute; display: block; left: 5px; top: 5px; width: 440px; height: 440px; opacity: 1;}
+	#list .pageThree{background: rgb(255, 232, 238); z-index: 2;}
+
+	#list .pageThree>*{position: absolute;}
+	#list .pageThree .sectionOne{overflow: hidden; box-sizing: border-box; border: 1px solid rgb(66, 59, 117); border-radius: 9px; display: block; left: 60px; top: 494px; width: 518px; height: 385px; z-index: 101; opacity: 1;}
+	#list .pageThree .sectionTwe{background: transparent; left: 23px; top: 94px; width: 460px; height: 152px; z-index: 102; opacity: 1;}
+	#list .pageThree .sectionThree{display: block; left: 230px; top: 919px; width: 221px; height: 85px; z-index: 303; opacity: 1; animation: forRight 2s linear;}
+	#list .pageThree .sectionFour{left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: 3000; pointer-events: none;}
+	#list .pageThree .sectionFive{left: 40px; top: 671px; width: 74px; z-index: 200; opacity: 1; animation: keyframe: 40px; animation: keyframe40 2s infinite both running;}
+	#list .pageThree .sectionSix{left: 17px; top: 827px; width: 97px; z-index: 210; opacity: 1; animation: keyframe40 2s infinite both running;}
+	#list .pageThree .sectionSeven{left: 22px; top: 1007px; width: 76px; z-index: 200; opacity: 1; animation: keyframe39 2s infinite both running;}
+	#list .pageThree .sectionEight{left: 476px; top: 34px; width: 56px; z-index: 210; opacity: 1; animation: keyframe40 2s infinite both running;}
+	#list .pageThree .sectionNine{left: 502px; top: 156px; width: 96px; z-index: 210; opacity: 1; animation: keyframe40 2s infinite both running; }
+	#list .pageThree .sectionTen{left: 528px; top: 88px; width: 93px; z-index: 200; opacity: 1; animation: keyframe34 10s infinite both running;}
+	
+	#list .pageThree .sectionTwe>div:nth-child(1){background: rgb(255, 232, 238); overflow: hidden; box-sizing: border-box; border: 0px solid transparent; border-radius: 19px; position: absolute; display: block; left: 0px; top: 0px; width: 460px; height: 460px; z-index: 0; opacity: 1;}
+	#list .pageThree .sectionTwe>img:nth-child(2){overflow: hidden; box-sizing: border-box; border: 2px solid rgb(66, 59, 117); border-radius: 9px; position: absolute; display: block; left: 8px; top: 8px; width: 440px; height: 440px; z-index: 0; opacity: 1;}
 
 /* 第四屏 */
-#list .pageFour{position: absolute; left: 0px; top: 0px; overflow: hidden; background: white; z-index: 2; width: 640px; height: 960px;}
+	#list .pageFour{}
 
-#list .pageFour img{position:absolute;}
-#list .pageFour>div{position:absolute;}
-#list .pageFour>img:nth-child(1){left: -181px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;}
-#list .pageFour>div:nth-child(2){top: 0px; left: 0px; z-index: 200;}
-#list .pageFour>div:nth-child(3){left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: 3000; pointer-events: none;}
-#list .pageFour>div:nth-child(6){left: 0px; right: 0px; top: 0px; bottom: 0px; pointer-events: none; z-index: 4000;}
-#list .pageFour>img:nth-child(7){left: 37px; top: 195px; width: 107px; height: 34px; z-index: 301; opacity: 1;}
-#list .pageFour>img:nth-child(8){left: 42px; top: 255px; width: 490px; height: 182px; z-index: 302; opacity: 1;}
-#list .pageFour>img:nth-child(9){left: 74px; top: 1031px; width: 66px; height: 51px; z-index: 303; opacity: 1;}
-#list .pageFour>img:nth-child(10){left: 138px; top: 1035px; width: 432px; height: 39px; z-index: 304; opacity: 1;}
-#list .pageFour>div:nth-child(11){background: transparent; left: 34px; top: 448px; width: 580px; height: 661px; z-index: 105; opacity: 1;}
-#list .pageFour>img:nth-child(12){left: 62px; top: 740px; width: 528px; height: 94px; z-index: 306; opacity: 1;}
-#list .pageFour>img:nth-child(13){position: absolute; left: 235px; top: 541px; width: 210px; height: 145px; z-index: 307; opacity: 1;}
+	#list .pageFour img{position:absolute;}
+	#list .pageFour>div{position:absolute;}
+	#list .pageFour .sectionOne{left: -181px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;}
+	#list .pageFour .sectonTwo{top: 0px; left: 0px; z-index: 200;}
+	#list .pageFour .sectionThree{left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: 3000; pointer-events: none;}
+	#list .pageFour .sectionSix{left: 0px; right: 0px; top: 0px; bottom: 0px; pointer-events: none; z-index: 4000;}
+	#list .pageFour .sectionSeven{left: 37px; top: 195px; width: 107px; height: 34px; z-index: 301; animation: forOpacity 1s linear;}
+	#list .pageFour .sectionEight{left: 42px; top: 255px; width: 490px; height: 182px; z-index: 302; opacity: 0; animation: D3X 2s linear 0.5s both running;}
+	#list .pageFour .sectionNine{left: 74px; top: 1031px; width: 66px; height: 51px; z-index: 303; opacity: 0; animation: D3X 2s linear 2s both running;}
+	#list .pageFour .sectionTen{left: 138px; top: 1035px; width: 432px; height: 39px; z-index: 304; opacity: 0; animation: D3X 2s linear 2s both running;}
+	#list .pageFour .sectionEleven{background: transparent; left: 34px; top: 448px; width: 580px; height: 661px; z-index: 105; opacity: 1; animation: forRight 2s linear;}
+	#list .pageFour .sectionTwelve{left: 62px; top: 740px; width: 528px; height: 94px; z-index: 306; animation: D3X 2s linear 2.5s both running;opacity: 0;}
+	#list .pageFour .sectionThirteen{position: absolute; left: 235px; top: 541px; width: 210px; height: 145px; z-index: 307; animation: D3X 2s linear 1.5s both running; opacity: 0;}
 
-#list .pageFour .sectionTwo>img:nth-child(1){z-index: 200; position: absolute; left: 31px; top: 83px; width: 60px; height: 60px; animation: keyframe40 6s linear 1.5s both running;}
-#list .pageFour .sectionTwo>img:nth-child(2){z-index: 200; position: absolute; left: 477px; top: 190px; width: 102px; height: 102px; animation: keyframe41 6s linear 2.5s both running;}
-#list .pageFour .sectionEleven>img:nth-child(1){left: 0px; top: 0px; width: 579px; height: 661px; z-index: 0; opacity: 1;}
-#list .pageFour .sectionEleven>img:nth-child(2){left: 17px; top: 14px; width: 545px; height: 541px; z-index: 0; opacity: 1;}
-
+	#list .pageFour .sectionTwo>img:nth-child(1){z-index: 200; position: absolute; left: 31px; top: 83px; width: 60px; height: 60px; animation: keyframe42 6s linear 1.5s both running; opacity: 0;}
+	#list .pageFour .sectionTwo>img:nth-child(2){z-index: 200; position: absolute; left: 477px; top: 190px; width: 102px; height: 102px; animation: keyframe43 6s linear 2.5s both running; opacity: 0;}
+	#list .pageFour .sectionEleven>img:nth-child(1){left: 0px; top: 0px; width: 579px; height: 661px; z-index: 0; opacity: 1;}
+	#list .pageFour .sectionEleven>img:nth-child(2){left: 17px; top: 14px; width: 545px; height: 541px; z-index: 0; opacity: 1;}
 
 /* 第五屏 */
-#list .page{position: absolute; left: 0px; top: 0px; overflow: hidden; background: rgb(255, 232, 238); z-index: 2; width: 640px; height: 100%;}
-#list .page>img:nth-child(1){overflow: hidden; box-sizing: border-box; border: 1px solid rgb(66, 59, 117); border-radius: 9px; position: absolute; display: block; left: 26px; top: 218px; width: 320px; height: 321px; z-index: 101; opacity: 1;}
-#list .page>img:nth-child(2){overflow: hidden; box-sizing: border-box; border: 1px solid rgb(66, 59, 117); border-radius: 9px; position: absolute; display: block; left: 360px; top: 218px; width: 250px; height: 321px; z-index: 102; opacity: 1;}
-#list .page>img:nth-child(3){overflow: hidden; box-sizing: border-box; border: 1px solid rgb(66, 59, 117); border-radius: 6px; position: absolute; display: block; left: 26px; top: 553px; width: 249px; height: 320px; z-index: 103; opacity: 1;}
-#list .page>img:nth-child(4){overflow: hidden; box-sizing: border-box; border: 1px solid rgb(66, 59, 117); border-radius: 6px; position: absolute; display: block; left: 290px; top: 553px; width: 320px; height: 320px; z-index: 104; opacity: 1;}
-#list .page>img:nth-child(5){position: absolute; display: block; left: 71px; top: 94px; width: 500px; height: 80px; z-index: 305; opacity: 1;}
-#list .page>img:nth-child(6){position: absolute; display: block; left: 145px; top: 493px; width: 351px; height: 105px; z-index: 306; opacity: 1;}
-#list .page>img:nth-child(7){position: absolute; display: block; left: 23px; top: 880px; width: 260px; height: 40px; z-index: 307; opacity: 1;}
-#list .page>img:nth-child(8){position: absolute; left: 204px; top: 1015px; width: 230px; z-index: 1; opacity: 1;}
-#list .page>img:nth-child(9){position: absolute; left: 222px; top: 935px; width: 102px; z-index: 2; opacity: 1;}
-#list .page>img:nth-child(10){position: absolute; left: 312px; top: 932px; width: 22px; z-index: 1; opacity: 1; transform-origin: center 90% 0px; animation: keyframe64 3s linear infinite both running;}
-#list .page>img:nth-child(11){position: absolute; left: 338px; top: 935px; width: 80px; z-index: 1; opacity: 1;}
-#list .page>img:nth-child(12){position: absolute; left: 417px; top: 902px; width: 63px; z-index: 2; opacity: 0; transform-origin: 15% bottom 0px; animation: keyframe62 2s linear infinite both running;}
-#list .page>img:nth-child(13){position: absolute; left: 179px; top: 987px; width: 19px; z-index: 1; opacity: 0; animation: keyframe63 3s infinite both running;}
+	#list .pageFive{position: absolute; left: 0px; top: 0px; overflow: hidden; background: rgb(255, 232, 238); z-index: 2; width: 640px; height: 100%;}
+	#list .pageFive>*{position:absolute;}
+
+	#list .pageFive .sectionOne{overflow: hidden; box-sizing: border-box; border: 1px solid rgb(66, 59, 117); border-radius: 9px; left: 26px; top: 218px; width: 320px; height: 321px; z-index: 101; opacity: 0;animation: keyframe59 1.5s linear 1.5s both running;}
+	#list .pageFive .sectionTwo{overflow: hidden; box-sizing: border-box; border: 1px solid rgb(66, 59, 117); border-radius: 9px; left: 360px; top: 218px; width: 250px; height: 321px; z-index: 102; opacity: 0; animation: keyframe59 1.5s linear 1s both running;}
+	#list .pageFive .sectionThree{overflow: hidden; box-sizing: border-box; border: 1px solid rgb(66, 59, 117); border-radius: 6px; left: 26px; top: 553px; width: 249px; height: 320px; z-index: 103; opacity: 0; animation: keyframe59 1.5s linear 0.2s both running;}
+	#list .pageFive .sectionFour{overflow: hidden; box-sizing: border-box; border: 1px solid rgb(66, 59, 117); border-radius: 6px; left: 290px; top: 553px; width: 320px; height: 320px; z-index: 104; opacity: 0; animation: keyframe59 1.5s linear both running;}
+	#list .pageFive .sectionFive{display: block; left: 71px; top: 94px; width: 500px; height: 80px; z-index: 305; opacity: 0; animation: forUp 2s linear 1s both running;}
+	#list .pageFive .sectionSix{display: block; left: 145px; top: 493px; width: 351px; height: 105px; z-index: 306; opacity: 0; animation: forUp 2s linear 1.5s both running;}
+	#list .pageFive .sectionSeven{display: block; left: 23px; top: 880px; width: 260px; height: 40px; z-index: 307; opacity: 1; animation: forLeft 2s linear;}
+	#list .pageFive .sectionEight{left: 204px; top: 1015px; width: 230px; z-index: 1; opacity: 1; animation: keyframe53 2s linear 0.5s both running;}
+	#list .pageFive .sectionNine{left: 222px; top: 935px; width: 102px; z-index: 2; opacity: 0; animation: keyframe54 2s linear 0.5s both running;}
+	#list .pageFive .sectionTen{left: 312px; top: 932px; width: 22px; z-index: 1; opacity: 0; transform-origin: center 90% 0px; animation: keyframe58 3s linear 2.5s infinite both running;}
+	#list .pageFive .sectionEleven{left: 338px; top: 935px; width: 80px; z-index: 1; opacity: 0; animation: keyframe55 2s linear 0.5s both running;}
+	#list .pageFive .sectionTwelve{left: 417px; top: 902px; width: 63px; z-index: 2; opacity: 0; transform-origin: 15% bottom 0px; animation: keyframe56 2s linear infinite both running;}
+	#list .pageFive .sectionThirteen{left: 179px; top: 987px; width: 19px; z-index: 1; opacity: 0; animation: keyframe57 3s infinite both running;}
 
 /* 第六屏 */
-#list .pageSix{position: absolute; left: 0px; top: 0px; overflow: hidden; background: white; z-index: 2; width: 640px; height: 960px;}
+	#list .pageSix{position: absolute; left: 0px; top: 0px; overflow: hidden; background: white; z-index: 2; width: 640px; height: 960px;}
 
-#list .pageSix>img:nth-child(1){position: absolute; display: block; left: -180px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;}
-#list .pageSix>img:nth-child(2){position: absolute; display: block; left: 182px; top: 902px; width: 287px; height: 88px; z-index: 301; opacity: 1;}
-#list .pageSix>div:nth-child(3){background: transparent; position: absolute; display: block; left: 118px; top: 182px; width: 616px; height: 881px; z-index: 102; opacity: 1; pointer-events:auto;}
-#list .pageSix>div:nth-child(4){overflow: hidden; position: absolute; display: block; left: 419px; top: 91px; width: 128px; height: 128px; z-index: 403; opacity: 1;}
-#list .pageSix>div:nth-child(5){overflow: hidden; position: absolute; display: block; left: 85px; top: 91px; width: 128px; height: 128px; z-index: 404; opacity: 1;}
-#list .pageSix>div:nth-child(6){overflow: hidden; position: absolute; display: block; left: 247px; top: 94px; width: 131px; height: 131px; z-index: 405; opacity: 1;}
-#list .pageSix>img:nth-child(7){position: absolute; display: block; left: 70px; top: 463px; width: 494px; height: 62px; z-index: 306; opacity: 1; transform: matrix3d(0.9786, -0.2059, 0, 0, 0.2059, 0.9786, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);}
-#list .pageSix>img:nth-child(8){position: absolute; display: block; left: 96px; top: 717px; width: 432px; height: 76px; z-index: 150; opacity: 0; animation: keyframe64 0.6s linear 0.2s both running;}
-#list .pageSix>img:nth-child(9){position: absolute; display: block; left: 442px; top: 814px; width: 53px; height: 48px; z-index: 150; opacity: 0; animation: keyframe13 0.5s linear 0.7s both running;}
-#list .pageSix>img:nth-child(10){position: absolute; display: block; left: 62px; top: 1085px;width: 48px; height: 40px; z-index: 150; opacity: 0; animation: keyframe62 2.8s linear 0.2941s infinite both running;}
-#list .pageSix>img:nth-child(11){position: absolute; display: block; left: 138px; top: 1082px;width: 26px; height: 25px; z-index: 150; opacity: 0; animation: keyframe62 2.8s linear 0.5131s infinite both running;}
-#list .pageSix>img:nth-child(12){position: absolute; display: block; left: 212px; top: 1097px; width: 40px; height: 39px; z-index: 150; opacity: 0; animation: keyframe62 2.8s linear 0.0566s infinite both running;}
-#list .pageSix>img:nth-child(13){position: absolute; display: block; left: 434px; top: 1091px; width: 29px; height: 26px; z-index: 150; opacity: 0; animation: keyframe62 2.8s linear 0.7231s infinite both running;}
-#list .pageSix>img:nth-child(14){position: absolute; display: block; left: 470px; top: 1085px; width: 28px; height: 29px; z-index: 150; opacity: 0; animation: keyframe62 2.8s linear 0.9111s infinite both running;}
-#list .pageSix>img:nth-child(15){position: absolute; display: block; left: 558px; top: 1082px; width: 39px; height: 32px; z-index: 150; opacity: 0; animation: keyframe62 2.8s linear 0.3479s infinite both running;}
-#list .pageSix>img:nth-child(16){position: absolute; display: block; left: 62px; top: 1085px; width: 48px; height: 40px; z-index: 150; opacity: 0; animation: keyframe63 2.8s linear 2.0941s infinite both running;}
-#list .pageSix>img:nth-child(17){position: absolute; display: block; left: 138px; top: 1081px; width: 26px; height: 25px; z-index: 150; opacity: 0; animation: keyframe63 2.8s linear 2.3131s infinite both running;}
-#list .pageSix>img:nth-child(18){position: absolute; display: block; left: 212px; top: 1097px; width: 40px; height: 39px; z-index: 150; opacity: 0; animation: keyframe63 2.8s linear 1.8566s infinite both running;}
-#list .pageSix>img:nth-child(19){position: absolute; display: block; left: 434px; top: 1091px; width: 29px; height: 26px; z-index: 150; opacity: 0; animation: keyframe63 2.8s linear 2.5231s infinite both running;}
-#list .pageSix>img:nth-child(20){position: absolute; display: block; left: 470px; top: 1085px; width: 28px; height: 29px; z-index: 150; opacity: 0; animation: keyframe63 2.8s linear 2.7111s infinite both running;}
-#list .pageSix>img:nth-child(21){position: absolute; display: block; left: 558px; top: 1082px; width: 39px; height: 32px; z-index: 150; opacity: 0; animation: keyframe63 2.8s linear 2.1479s infinite both running;}
- #list .pageSix .sectionThree>div:nth-child(1){background: transparent; position: absolute; display: block; left: -5px; top: -6px; width: 410px; height: 582px; z-index: 10000; opacity: 1;}
-#list .pageSix .sectionThree img:nth-child(1){position: absolute; display: block; left: 0px; top: 0px; width: 410px; height: 582px; z-index: 0; opacity: 1;}
-#list .pageSix .sectionThree img:nth-child(2){overflow: hidden; box-sizing: border-box; -webkit-mask-image: url("http://img01.cloud7.com.cn/817ce820148eba3c3b179dc0c3e7fa83.png";); -webkit-mask-size: 399px 570px; position: absolute; display: block; left: 3px; top: 0px; width: 399px; height: 570px; z-index: 0; opacity: 1;}
-#list .pageSix .sectionFour>img:nth-child(1){height: 128px; width: 128px;margin-left: 0px; margin-top: 0px;}
-#list .pageSix .sectionFive>img:nth-child(1){height: 128px; width: 128px; margin-left: 0px; margin-top: 0px;}
-#list .pageSix .sectionSix>img:nth-child(1){height: 123px; width: 123px; margin-left: 0px; margin-top: 0px;}
+	#list .pageSix .sectionOne{position: absolute; left: -180px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;}
+	#list .pageSix .sectionTwo{position: absolute; left: 182px; top: 902px; width: 287px; height: 88px; z-index: 301; opacity: 1; animation: keyframe62 1s linear;}
+	#list .pageSix .sectionThree{background: transparent; position: absolute; left: 118px; top: 182px; width: 616px; height: 881px; z-index: 102; opacity: 1; pointer-events:auto; }
+	#list .pageSix .sectionFour{overflow: hidden; position: absolute; display: block; left: 419px; top: 91px; width: 128px; height: 128px; z-index: 403; opacity: 1; animation: forUp 1s linear 1s both running;}
+	#list .pageSix .sectionFive{overflow: hidden; position: absolute; display: block; left: 85px; top: 91px; width: 128px; height: 128px; z-index: 404; opacity: 1; animation: forUp 1s linear 1.5s both running;}
+	#list .pageSix .sectionSix{overflow: hidden; position: absolute; display: block; left: 247px; top: 94px; width: 131px; height: 131px; z-index: 405; opacity: 1;animation: forUp 1s linear 2s both running;}
+	#list .pageSix .sectionSeven{position: absolute; display: block; left: 70px; top: 463px; width: 494px; height: 62px; z-index: 306; opacity: 0; transform: matrix3d(0.9786, -0.2059, 0, 0, 0.2059, 0.9786, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); animation: keyframe61 1s linear both running;}
+	#list .pageSix .sectionEight{position: absolute; display: block; left: 96px; top: 717px; width: 432px; height: 76px; z-index: 150; opacity: 0; animation: keyframe60 0.6s linear 4s both running;}
+	#list .pageSix .sectionNine{position: absolute; display: block; left: 442px; top: 814px; width: 53px; height: 48px; z-index: 150; opacity: 0; animation: forOpacity 0.5s linear 4s both running;}
+	#list .pageSix .sectionTen{position: absolute; display: block; left: 62px; top: 1085px;width: 48px; height: 40px; z-index: 150; opacity: 0; animation: forUp2 3s linear infinite both running;}
+	#list .pageSix .sectionElven{position: absolute; display: block; left: 138px; top: 1082px;width: 26px; height: 25px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 0.5131s infinite both running;}
+	#list .pageSix .sectionTwelve{position: absolute; display: block; left: 212px; top: 1097px; width: 40px; height: 39px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 0.0566s infinite both running;}
+	#list .pageSix .sectionThirteen{position: absolute; display: block; left: 434px; top: 1091px; width: 29px; height: 26px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 0.7231s infinite both running;}
+	#list .pageSix .sectionFourteen{position: absolute; display: block; left: 470px; top: 1085px; width: 28px; height: 29px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 0.9111s infinite both running;}
+	#list .pageSix .sectionFifteen{position: absolute; display: block; left: 558px; top: 1082px; width: 39px; height: 32px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 0.3479s infinite both running;}
+	#list .pageSix .sectionSixteen{position: absolute; display: block; left: 62px; top: 1085px; width: 48px; height: 40px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 2.0941s infinite both running;}
+	#list .pageSix .sectionSeventeen{position: absolute; display: block; left: 138px; top: 1081px; width: 26px; height: 25px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 2.3131s infinite both running;}
+	#list .pageSix .sectionEighteen{position: absolute; display: block; left: 212px; top: 1097px; width: 40px; height: 39px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 1.8566s infinite both running;}
+	#list .pageSix .sectionNineteen{position: absolute; display: block; left: 434px; top: 1091px; width: 29px; height: 26px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 2.5231s infinite both running;}
+	#list .pageSix .sectionTwenty{position: absolute; display: block; left: 470px; top: 1085px; width: 28px; height: 29px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 2.7111s infinite both running;}
+	#list .pageSix .sectionTwentyOne{position: absolute; display: block; left: 558px; top: 1082px; width: 39px; height: 32px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 2.1479s infinite both running;}
 
+	#list .pageSix .sectionThree>div:nth-child(1){background: transparent; position: absolute; display: block; left: -5px; top: -6px; width: 409px; height: 582px; z-index: 10000; opacity: 0; animation: keyframe63 1s linear 3s both running;}
+	#list .pageSix .sectionThree .sec_img_1{position: absolute; display: block; left: 0px; top: 0px; width: 409px; height: 582px; z-index: 0; opacity: 1;}
+	#list .pageSix .sectionThree .sec_img_2{overflow: hidden; box-sizing: border-box; -webkit-mask-image: url("../img/page6/2662e303b90472e15ae65d3f2a153b79.png"); -webkit-mask-size: 399px 570px; position: absolute; display: block; left: 3px; top: 0px; width: 399px; height: 570px; z-index: 0; opacity: 1;}
+	#list .pageSix .sectionFour>img:nth-child(1){height: 128px; width: 128px;margin-left: 0px; margin-top: 0px;}
+	#list .pageSix .sectionFive>img:nth-child(1){height: 128px; width: 128px; margin-left: 0px; margin-top: 0px;}
+	#list .pageSix .sectionSix>img:nth-child(1){height: 123px; width: 123px; margin-left: 0px; margin-top: 0px;}
 
 /* 第七屏 */
-#list .pageSeven{position: absolute; left: 0px; top: 0px; overflow: hidden; background: white; z-index: 2; width: 640px; height: 960px;}
+	#list .pageSeven{position: absolute; left: 0px; top: 0px; overflow: hidden; background: white; z-index: 2; width: 640px; height: 960px;}
 
-#list .pageSeven>img:nth-child(1){position: absolute; display: block; left: -180px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;}
-#list .pageSeven>img:nth-child(2){position: absolute; display: block; left: 59px; top: 337px; width: 90px; height: 281px; z-index: 301; opacity: 1;}
-#list .pageSeven>div:nth-child(3){background: transparent; position: absolute; display: block; left: 30px; top: 14px; width: 295px; height: 272px; z-index: 102; opacity: 1; transform: matrix3d(0.9976, -0.0697, 0, 0, 0.0697, 0.9976, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);}
-#list .pageSeven>div:nth-child(4){background:transparent; position: absolute; display: block; left: 187px; top: 238px; width: 443px; height: 431px; z-index: 103; opacity: 1; transform: matrix3d(0.9945, 0.1045, 0, 0, -0.1045, 0.9945, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);}
-#list .pageSeven>div:nth-child(5){background: transparent; position: absolute; display: block; left: 51px; top: 684px; width: 443px; height: 431px; z-index: 104; opacity: 1; transform: matrix3d(0.9945, -0.1045, 0, 0, 0.1045, 0.9945, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);}
-#list .pageSeven>img:nth-child(6){position: absolute; left: 508px; top: 820px; width: 50px; z-index: 200; animation: keyframe69 2s linear infinite both running;}
-#list .pageSeven>img:nth-child(7){position: absolute; left: 511px; top: 881px; width: 45px; z-index: 200; animation: keyframe69 2s linear infinite both running;}
-#list .pageSeven>img:nth-child(8){position: absolute; left: 40px; top: 0px; width: 48px; z-index: 200; animation: keyframe70 2s both running;}
-#list .pageSeven>img:nth-child(9){position: absolute; left: 43px; top: 853px; width: 66px; z-index: 200; animation: keyframe71 1s both running;}
+	#list .pageSeven .sectionOne{position: absolute; display: block; left: -180px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;}
+	#list .pageSeven .sectionTwo{position: absolute; display: block; left: 59px; top: 337px; width: 90px; height: 281px; z-index: 301; animation: forLeft 1s linear 3s both running; }
+	#list .pageSeven .sectionThree{background: transparent; position: absolute; display: block; left: 30px; top: 14px; width: 295px; height: 272px; z-index: 102; transform: matrix3d(0.9976, -0.0697, 0, 0, 0.0697, 0.9976, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); animation: keyframe70 1s linear both running;}
+	#list .pageSeven .sectionFour{background:transparent; position: absolute; display: block; left: 187px; top: 238px; width: 443px; height: 431px; z-index: 103; animation: keyframe71 1s linear 1s both running;}
+	#list .pageSeven .sectionFive{background: transparent; position: absolute; display: block; left: 51px; top: 684px; width: 443px; height: 431px; z-index: 104; transform: matrix3d(0.9945, -0.1045, 0, 0, 0.1045, 0.9945, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); animation: keyframe72 1s linear 2s both running;}
+	#list .pageSeven .sectionSix{position: absolute; left: 508px; top: 820px; width: 50px; z-index: 200; animation: keyframe76 2s linear infinite both running;}
+	#list .pageSeven .sectionSeven{position: absolute; left: 511px; top: 881px; width: 45px; z-index: 200; animation: keyframe76 2s linear infinite both running;}
+	#list .pageSeven .sectionEight{position: absolute; left: 40px; top: 0px; width: 48px; z-index: 200; animation: keyframe70 2s both running;}
+	#list .pageSeven .sectionNine{position: absolute; left: 43px; top: 853px; width: 66px; z-index: 200; animation: keyframe73 1s 2s both running;}
 
-#list .pageSeven .sectionThree>img:nth-child(1){position: absolute; display: block; left: 0px; top: 0px; width: 278px; height: 272px; z-index: 0; opacity: 1;}
-#list .pageSeven .sectionThree>img:nth-child(2){border-radius: 10px; overflow: hidden; box-sizing: border-box;  -webkit-mask-size: 253px 248px; position: absolute; display: block; left: 12px; top: 6px; width: 253px; height: 249px; z-index: 1; opacity: 1;}
-#list .pageSeven .sectionFour>img:nth-child(1){position: absolute; display: block; left: 0px; top: 0px; width: 444px; height: 431px; z-index: 0; opacity: 1;}
-#list .pageSeven .sectionFour>img:nth-child(2){border-radius: 16px;overflow: hidden; box-sizing: border-box; -webkit-mask-size: 419px 406px; position: absolute; display: block; left: 12px; top: 6px; width: 419px; height: 406px; z-index: 0; opacity: 1;}
-#list .pageSeven .sectionFive>img:nth-child(1){position: absolute; display: block; left: 0px; top: 0px; width: 443px; height: 431px; z-index: 0; opacity: 1;}
-#list .pageSeven .sectionFive>img:nth-child(2){border-radius: 12px;overflow: hidden; box-sizing: border-box;-webkit-mask-size: 419px 406px; position: absolute; display: block; left: 12px; top: 6px; width: 419px; height: 406px; z-index: 0; opacity: 1;}
+	#list .pageSeven .sectionThree>img:nth-child(1){position: absolute; display: block; left: 0px; top: 0px; width: 278px; height: 272px; z-index: 0; opacity: 1;}
+	#list .pageSeven .sectionThree>img:nth-child(2){border-radius: 10px; overflow: hidden; box-sizing: border-box;  -webkit-mask-size: 253px 248px; position: absolute; display: block; left: 12px; top: 6px; width: 253px; height: 249px; z-index: 1; opacity: 1;}
+	#list .pageSeven .sectionFour>img:nth-child(1){position: absolute; display: block; left: 0px; top: 0px; width: 444px; height: 431px; z-index: 0; opacity: 1;}
+	#list .pageSeven .sectionFour>img:nth-child(2){border-radius: 16px;overflow: hidden; box-sizing: border-box; -webkit-mask-size: 419px 406px; position: absolute; display: block; left: 12px; top: 6px; width: 419px; height: 406px; z-index: 0; opacity: 1;}
+	#list .pageSeven .sectionFive>img:nth-child(1){position: absolute; display: block; left: 0px; top: 0px; width: 443px; height: 431px; z-index: 0; opacity: 1;}
+	#list .pageSeven .sectionFive>img:nth-child(2){border-radius: 12px;overflow: hidden; box-sizing: border-box;-webkit-mask-size: 419px 406px; position: absolute; display: block; left: 12px; top: 6px; width: 419px; height: 406px; z-index: 0; opacity: 1;}
 
 /* 第八屏 */
-#list .pageEight{position: absolute; left: 0px; top: 0px; overflow: hidden; background: white; z-index: 2; width: 640px; height: 960px;}
+	#list .pageEight{position: absolute; left: 0px; top: 0px; overflow: hidden; background: white; z-index: 2; width: 640px; height: 960px;}
 
-#list .pageEight>img:nth-child(1){position: absolute; display: block; left: -180px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;}
-#list .pageEight>img:nth-child(2){position: absolute; display: block; left: 73px; top: 431px; width: 497px; height: 168px; z-index: 301; opacity: 1;}
-#list .pageEight>img:nth-child(3){position: absolute; display: block; left: 287px; top: 147px; width: 343px; height: 93px; z-index: 150; opacity: 0; animation: keyframe73 1s linear 0.5s both running;}
-#list .pageEight>img:nth-child(4){position: absolute; display: block; left: 394px; top: 936px; width: 90px; height: 96px; z-index: 150;}
-#list .pageEight>img:nth-child(5){position: absolute; display: block; left: 490px; top: 956px; width: 113px; height: 101px; z-index: 150;}
-#list .pageEight>img:nth-child(6){position: absolute; display: block; left: 465px; top: 929px; width: 28px; height: 28px; z-index: 150; animation: keyframe74 2.8s linear 1s infinite both running;}
-#list .pageEight>img:nth-child(7){position: absolute; display: block; left: 481px; top: 901px; width: 15px; height: 19px; z-index: 150; animation: keyframe74 2.8s linear infinite both running;}
-#list .pageEight>img:nth-child(8){position: absolute; display: block; left: 495px; top: 920px; width: 15px; height: 15px; z-index: 150; animation: keyframe74 2.8s linear 0.5s infinite both running;}
-#list .pageEight>img:nth-child(9){position: absolute; display: block; left: 97px; top: 145px; width: 36px; height: 32px; z-index: 90; animation: keyframe75 0.5s linear 0.5s both running;}
-#list .pageEight>img:nth-child(10){position: absolute; display: block; left: 236px; top: 117px; width: 59px; height: 15px; z-index: 150; animation: keyframe75 1.8s ease-in-out 0s infinite both running;}
-#list .pageEight>img:nth-child(11){position: absolute; display: block; left: 266px; top: 90px; width: 34px; height: 12px; z-index: 150; animation: keyframe75 1.8s ease-in-out 0.3s infinite both running;}
-#list .pageEight>img:nth-child(12){position: absolute; display: block; left: 300px; top: 73px; width: 22px; height: 9px; z-index: 150; animation: keyframe75 1.8s ease-in-out 0.6s infinite both running;}
-#list .pageEight>img:nth-child(13){position: absolute; display: block; left: 63px; top: 96px; width: 116px; height: 114px; z-index: 150; animation: keyframe76 3s linear infinite both running;}
-#list .pageEight>img:nth-child(14){position: absolute; display: block; left: 432px; top: 1049px; width: 83px; height: 59px; z-index: 150; animation: keyframe77 3s linear infinite both running;}
-
+	#list .pageEight .sectionOne{position: absolute; display: block; left: -180px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;}
+	#list .pageEight .sectionTwo{position: absolute; display: block; left: 73px; top: 431px; width: 497px; height: 168px; z-index: 301; animation: keyframe85 2s linear 0.5s both running;}
+	#list .pageEight .sectionThree{position: absolute; display: block; left: 287px; top: 147px; width: 343px; height: 93px; z-index: 150; animation: forRight 1s linear 0.5s both running;}
+	#list .pageEight .sectionFour{position: absolute; display: block; left: 394px; top: 936px; width: 90px; height: 96px; z-index: 150;}
+	#list .pageEight .sectionFive{position: absolute; display: block; left: 490px; top: 956px; width: 113px; height: 101px; z-index: 150;}
+	#list .pageEight .sectionSix{position: absolute; display: block; left: 465px; top: 929px; width: 28px; height: 28px; z-index: 150; animation: forUp1 2.8s linear 1s infinite both running;}
+	#list .pageEight .sectionSeven{position: absolute; display: block; left: 481px; top: 901px; width: 15px; height: 19px; z-index: 150; animation: forUp1 2.8s linear infinite both running;}
+	#list .pageEight .sectionEight{position: absolute; display: block; left: 495px; top: 920px; width: 15px; height: 15px; z-index: 150; animation: forUp1 2.8s linear 0.5s infinite both running;}
+	#list .pageEight .sectionNine{position: absolute; display: block; left: 97px; top: 145px; width: 36px; height: 32px; z-index: 90; animation: keyframe83 0.5s linear 0.5s both running;}
+	#list .pageEight .sectionTen{position: absolute; display: block; left: 236px; top: 117px; width: 59px; height: 15px; z-index: 150; animation: keyframe81 1.8s ease-in-out 0s infinite both running;}
+	#list .pageEight .sectionEleven{position: absolute; display: block; left: 266px; top: 90px; width: 34px; height: 12px; z-index: 150; animation: keyframe81 1.8s ease-in-out 0.3s infinite both running;}
+	#list .pageEight .sectionTwelve{position: absolute; display: block; left: 300px; top: 73px; width: 22px; height: 9px; z-index: 150; animation: keyframe81 1.8s ease-in-out 0.6s infinite both running;}
+	#list .pageEight .sectionThirteen{position: absolute; display: block; left: 63px; top: 96px; width: 116px; height: 114px; z-index: 150; animation: keyframe80 3s linear infinite both running;}
+	#list .pageEight .sectionFourteen{position: absolute; display: block; left: 432px; top: 1049px; width: 83px; height: 59px; z-index: 150; animation: keyframe84 3s linear infinite both running;}
 
 /*第九屏*/
-#list .pageNine{position: absolute; left: 0px; top: 0px; overflow: hidden; background: rgb(255, 255, 255); z-index: 2; width: 640px; height: 960px;}
+	#list .pageNine{position: absolute; left: 0px; top: 0px; overflow: hidden; background: rgb(255, 255, 255); z-index: 2; width: 640px; height: 960px;}
 
-#list .pageNine>img{position:absolute;}
-#list .pageNine>img:nth-child(1){left: 99px; top: 96px; width: 439px; height: 71px; z-index: 301; opacity: 1;}
-#list .pageNine>img:nth-child(2){left: 51px; top: 314px; width: 532px; height: 600px; z-index: 302; opacity: 1;}
-#list .pageNine>img:nth-child(3){left: 17px; top: 269px; width: 613px; height: 810px; z-index: 103; opacity: 1;}
-#list .pageNine>img:nth-child(4){left: 42px; top: 244px; width: 562px; height: 810px; z-index: 104; opacity: 1;}
-#list .pageNine>img:nth-child(5){left: 460px; top: 198px; width: 97px; height: 91px; z-index: 105; opacity: 1;}
-#list .pageNine>img:nth-child(6){left: 107px; top: 281px; width: 382px; height: 31px; z-index: 307; opacity: 1;}
-#list .pageNine>img:nth-child(7){left: 128px; top: 927px; width: 382px; height: 31px; z-index: 308; opacity: 1;}
-#list .pageNine>img:nth-child(8){z-index: 200; opacity: 1; top: 32px; left: 34px; width: 62px;}
-#list .pageNine>img:nth-child(9){z-index: 210; opacity: 1; top: 969px; left: 255px; width: 189px;}
-#list .pageNine>img:nth-child(10){z-index: 100; opacity: 1; top: 9px; left: -91px; width: 300px;}
-#list .pageNine>img:nth-child(11){z-index: 10; opacity: 1; top: 977px; left: 352px; width: 278px;}
-#list .pageNine>img:nth-child(12){z-index: 10; opacity: 1; top: 978px; left: 343px; width: 277px;}
+	#list .pageNine>img{position:absolute;}
+	#list .pageNine .sectionOne{left: 99px; top: 96px; width: 439px; height: 71px; z-index: 301; animation: keyframe90 1s linear both running;}
+	#list .pageNine .sectionTwo{left: 51px; top: 314px; width: 532px; height: 600px; z-index: 302; animation: keyframe90 1s linear 0.5s both running;}
+	#list .pageNine .sectionThree{left: 17px; top: 269px; width: 613px; height: 810px; z-index: 103; opacity: 1;}
+	#list .pageNine .sectionFour{left: 42px; top: 244px; width: 562px; height: 810px; z-index: 104; opacity: 1;}
+	#list .pageNine .sectionFive{left: 460px; top: 198px; width: 97px; height: 91px; z-index: 105; opacity: 1;}
+	#list .pageNine .sectionSix{left: 107px; top: 281px; width: 382px; height: 31px; z-index: 307; animation: keyframe90 0.5s linear 1.5s both running;}
+	#list .pageNine .sectionSeven{left: 128px; top: 927px; width: 382px; height: 31px; z-index: 308; animation: keyframe90 1s linear 1.5s both running;}
+	#list .pageNine .sectionEight{z-index: 200; opacity: 1; top: 32px; left: 34px; width: 62px; animation: keyframe91 1s linear 1.5s both running;}
+	#list .pageNine .sectionNine{z-index: 210; opacity: 1; top: 969px; left: 255px; width: 189px; animation: keyframe90 1s linear 2s both running;}
+	#list  .pageNine .sectionTen{z-index: 100; opacity: 1; top: 9px; left: -91px; width: 300px; animation: forOpacity 1s linear 0.5s both running;}
+	#list .pageNine .sectionEleven{z-index: 10; opacity: 1; top: 977px; left: 352px; width: 278px; animation: forOpacity 1s linear 1s both running;}
+	#list .pageNine .sectionTwelve{z-index: 10; opacity: 1; top: 978px; left: 343px; width: 277px; animation: forOpacity 1s linear 1.5s both running;}
 
 
 
@@ -249,7 +769,7 @@ z-index: 7;animation: 1s move linear infinite;
 .loading{width: 100%;height: 100%;background: white;z-index: 12;color: darkgreen;
 position: relative;top: 0;left: 0;font-size: 30px;}
 .loading ul{position: absolute;top: 40%;left: 40%;}
-.loading li{width: 5px;height: 50px;background: darkgreen;
+.loading li{width: 5px;height: 50px;background: pinks;
 	float: left;margin-left: 10px;
 		animation: 2s liMove linear infinite;
 	}
