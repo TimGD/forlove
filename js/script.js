@@ -36,6 +36,7 @@ $(function(){
 	//移动背景图片居中
 	var nowLeft = (780 - 1000)/2;
 	$aBImg.css('left',nowLeft+'px');
+	$aBImg.css('height',viewW +'px');
 	$aContent.css('left',(780-640)/2 + 'px');
 	//loading();
 	//划屏效果
