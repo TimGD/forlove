@@ -43,6 +43,7 @@ $(function(){
 	
 	
 	$aBImg.css('left',nowLeft+'px');
+	$aBImg.css('height',viewW +'px');
 	$aContent.css('left',(780-640)/2 + 'px');
 	//loading();
 	//划屏效果
