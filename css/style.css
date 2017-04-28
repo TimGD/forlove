@@ -557,9 +557,9 @@ img{order:0;}
 #list .content{position:absolute; width: 640px;}
 
 /*第一屏*/
-	#list .pageOne{display: block; z-index:5;}
-
-	#list .pageOne .sectionOne{position: absolute; display: block; left: -181px; top: 0px; z-index: 0;}
+	#list .pageOne{display: block; z-index:5; background:url(../img/page1/d58c73e63a9cadce237925de3d650c8d.jpg) no-repeat; background-size: 1000px 100%;}
+	
+	#list .pageOne .sectionOne{position: absolute;left: -181px; top: 0px; z-index: 0;}
 	#list .pageOne .sectionTwe{overflow: hidden; position: absolute; display: block; left: 253px; top: 34px; width: 128px; height: 80px; z-index: 103;}
 	#list .pageOne .sectionThree{position: absolute; display: block; left: 179px; top: 700px; width: 430px; height: 83px;} 
 	#list .pageOne .sectionFour{background: transparent; position: absolute; display: block; left: 0px; top: 88px; width: 640px; height: 508px; z-index: 102;}
@@ -580,7 +580,7 @@ img{order:0;}
 	#list .pageOne .sectionFive>img{height: 200px; width: 200px; margin-left: 0px; margin-top: 2px;}
 
 /*第二屏*/
-	#list .pageTwe{z-index: 2;}
+	#list .pageTwe{z-index: 2;background:url(../img/page2/d58c73e63a9cadce237925de3d650c8d.jpg) no-repeat; background-size: 1000px 100%;}
 
 	#list .pageTwe .sectionOne{position: absolute; display: block; left: -181px; top: 0px; z-index: 0; opacity: 1;}
 	#list .pageTwe .sectionTwe{position: absolute; display: block; left: 232px; top: 976px; width: 399px; height: 88px; z-index: 301; opacity: 1;}	
@@ -610,7 +610,7 @@ img{order:0;}
 	#list .pageThree .sectionTwe>img:nth-child(2){overflow: hidden; box-sizing: border-box; border: 2px solid rgb(66, 59, 117); border-radius: 9px; position: absolute; display: block; left: 8px; top: 8px; width: 440px; height: 440px; z-index: 0; opacity: 1;}
 
 /* 第四屏 */
-	#list .pageFour{}
+	#list .pageFour{background:url(../img/page4/05a172f756b89df12c70e89c82395e2a.jpg) no-repeat; background-size: 1000px 100%;}
 
 	#list .pageFour img{position:absolute;}
 	#list .pageFour div{position:absolute;}
@@ -650,7 +650,7 @@ img{order:0;}
 	#list .pageFive .sectionThirteen{left: 179px; top: 987px; width: 19px; z-index: 1; opacity: 0; animation: keyframe57 3s infinite both running;}
 
 /* 第六屏 */
-	#list .pageSix{background: white; z-index: 2;}
+	#list .pageSix{z-index: 2;background: white url(../img/page6/d58c73e63a9cadce237925de3d650c8d.jpg) no-repeat; background-size: 1000px 100%;}
 
 	#list .pageSix .sectionOne{position: absolute; left: -180px; top: 0px; z-index: 0; opacity: 1;}
 	#list .pageSix .sectionTwo{position: absolute; left: 182px; top: 902px; width: 287px; height: 88px; z-index: 301; opacity: 1; animation: keyframe62 1s linear;}
@@ -682,7 +682,7 @@ img{order:0;}
 	#list .pageSix .sectionSix>img:nth-child(1){height: 123px; width: 123px; margin-left: 0px; margin-top: 0px;}
 
 /* 第七屏 */
-	#list .pageSeven{background: white; z-index: 2;}
+	#list .pageSeven{z-index: 2;background: white url(../img/page7/bg.jpg) no-repeat; background-size: 1000px 100%;}
 
 	#list .pageSeven .sectionOne{position: absolute; display: block; left: -180px; top: 0px; z-index: 0; opacity: 1;}
 	#list .pageSeven .sectionTwo{position: absolute; display: block; left: 59px; top: 337px; width: 90px; height: 281px; z-index: 301; animation: forLeft 1s linear 3s both running; }
@@ -702,7 +702,7 @@ img{order:0;}
 	#list .pageSeven .sectionFive>img:nth-child(2){border-radius: 12px;overflow: hidden; box-sizing: border-box;-webkit-mask-size: 419px 406px; position: absolute; display: block; left: 12px; top: 6px; width: 419px; height: 406px; z-index: 0; opacity: 1;}
 
 /* 第八屏 */
-	#list .pageEight{background: white; z-index: 2;}
+	#list .pageEight{z-index: 2;background: white url(../img/page8/5c08c36b32e1979b98cb0bdb33d0b223.jpg) no-repeat; background-size: 1000px 100%;}
 
 	#list .pageEight .sectionOne{position: absolute; display: block; left: -180px; top: 0px; z-index: 0; opacity: 1;}
 	#list .pageEight .sectionTwo{position: absolute; display: block; left: 73px; top: 431px; width: 497px; height: 168px; z-index: 301; animation: keyframe85 2s linear 0.5s both running;}

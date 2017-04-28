@@ -17,24 +17,31 @@ $(function(){
 	
 	var viewH = $(window).height();
 	var viewW = $(window).width();
-	var vW = 
 	$main.css('height',viewH);
 	$ali.css('height',viewH);
 	$aContent.css('height',viewH);
 
-	console.log(viewW);
 	$main.css('width',viewW);
 	$ali.css('width',viewW);
 	
 	//计算等比例缩放之后的屏幕宽度
 	var nowWidth = desW *desH /  viewH;
+	//计算等比例放大之后的宽度
+	var dW = 1000;
+	var dH = 1136;
+	var nWidth = dW / dH * viewH;
+	//移动背景图片居中
+	var nowLeft = (780 - 1000)/2;
+	$ali.css('background-position',nowLeft+'px 0px');
+	
 
 	//赋值给屏幕宽度
 	// var i = document.getElementsByTagName("meta");
 	// i[1]["content"] = 'width='+nowWidth+',user-scalable=no';
 	
 	//移动背景图片居中
-	var nowLeft = (780 - 1000)/2;
+	
+	
 	$aBImg.css('left',nowLeft+'px');
 	$aContent.css('left',(780-640)/2 + 'px');
 	//loading();
