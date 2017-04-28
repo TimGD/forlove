@@ -6,24 +6,37 @@ $(function(){
 	
 	var $main = $('.main');
 	var $ali = $('#list').children('li');
-	
-	var desW = 1000;
-	var desH = 1136;	
+	var $aBImg = $('#list .nbg');
+	// var $
+	var $aContent = $('#list .content');
+
+	var desW = 640;
+	var desH = 1138;	
 	
 	//计算可视区的高度
 	
 	var viewH = $(window).height();
 	var viewW = $(window).width();
+	var vW = 
 	$main.css('height',viewH);
-	$ali.css('height',viewH);	
+	$ali.css('height',viewH);
+	$aContent.css('height',viewH);
+
+	console.log(viewW);
+	$main.css('width',viewW);
+	$ali.css('width',viewW);
 	
-	//计算等比例放大之后的宽度
-	
-	var nowWidth = desW / desH * viewH;
+	//计算等比例缩放之后的屏幕宽度
+	var nowWidth = desW *desH /  viewH;
+
+	//赋值给屏幕宽度
+	// var i = document.getElementsByTagName("meta");
+	// i[1]["content"] = 'width='+nowWidth+',user-scalable=no';
 	
 	//移动背景图片居中
-	$ali.css('background-position',(viewW-nowWidth)/2+'px 0px');
-
+	var nowLeft = (780 - 1000)/2;
+	$aBImg.css('left',nowLeft+'px');
+	$aContent.css('left',(780-640)/2 + 'px');
 	//loading();
 	//划屏效果
 	slideList();

@@ -460,9 +460,6 @@ img{order:0;}
 	0%{opacity:0; transform: scale(0.3, 0.3);}
 	100%{opacity: 1; transform: scale(1,1);}
 }
-@keyframes keyframe86{
-
-}
 
 @keyframes keyframe90{
 	0%{ opacity: 0; transform: scale3d(0.3, 0.3, 0.5) }
@@ -557,15 +554,15 @@ img{order:0;}
 
 /*#list{width: 100%;height: 100%;}*/
 #list>li{position: absolute; left: 0px; top: 0px; overflow: hidden; background: white; z-index: 2; width: 640px; height: 960px;display: none;}
+#list .content{position:absolute; width: 640px;}
 
 /*第一屏*/
 	#list .pageOne{display: block; z-index:5;}
 
-	#list .pageOne .sectionOne{position: absolute; display: block; left: -181px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;
-	}
-	#list .pageOne .sectionTwe{overflow: hidden; position: absolute; display: block; left: 253px; top: 34px; width: 128px; height: 80px; z-index: 103; opacity: 1;}
+	#list .pageOne .sectionOne{position: absolute; display: block; left: -181px; top: 0px; z-index: 0;}
+	#list .pageOne .sectionTwe{overflow: hidden; position: absolute; display: block; left: 253px; top: 34px; width: 128px; height: 80px; z-index: 103;}
 	#list .pageOne .sectionThree{position: absolute; display: block; left: 179px; top: 700px; width: 430px; height: 83px;} 
-	#list .pageOne .sectionFour{background: transparent; position: absolute; display: block; left: 0px; top: 88px; width: 640px; height: 508px; z-index: 102; opacity: 1;}
+	#list .pageOne .sectionFour{background: transparent; position: absolute; display: block; left: 0px; top: 88px; width: 640px; height: 508px; z-index: 102;}
 	#list .pageOne .sectionFive{overflow: hidden; position: absolute; display: none; left: 179px; top: 490px; width: 199px; height: 201px; z-index: 405; opacity: 1; animation: forLeft 2s linear}
 	#list .pageOne .sectionSix{z-index: 200; position: absolute; top: 581px; left: 6px; width: 100px; height: 80px; opacity: 1;}
 	#list .pageOne .sectionSeven{z-index: 200; position: absolute; top: 50px; left: 436px; width: 181px; height: 54px;}
@@ -573,7 +570,7 @@ img{order:0;}
 	#list .pageOne .sectionNine{position: absolute; bottom: 90px; left: 70px; width: 59px; height: 59px; z-index: 104; animation: forUp3 3.2s linear infinite both running;}
 	#list .pageOne .sectionTen{position: absolute; bottom: 90px; left: 69px; width: 46px; height: 42px; z-index: 104; animation: forUp3 3.5s ease-in-out 0.4s infinite both running;}
 	#list .pageOne .sectionEleven{position: absolute; bottom: 90px; left: 70px; width: 40px; height: 39px; z-index: 104; animation: forUp3 3s ease-out 0.5s infinite both running;}
-	#list .pageOne .section{position: absolute; bottom: 90px; left: 70px; width: 37px; height: 33px; z-index: 104; animation: forUp3 3.8s ease-in 2.31s infinite both running;}
+	#list .pageOne .sectionTwelve{position: absolute; bottom: 90px; left: 70px; width: 37px; height: 33px; z-index: 104; animation: forUp3 3.8s ease-in 2.31s infinite both running;}
 
 	#list .pageOne .sectionTwe>img{height: 80px; width: 130px; margin-left: -1px; margin-top: 0px;}
 
@@ -585,11 +582,11 @@ img{order:0;}
 /*第二屏*/
 	#list .pageTwe{z-index: 2;}
 
-	#list .pageTwe>.sectionOne{position: absolute; display: block; left: -181px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;}
-	#list .pageTwe>.sectionTwe{position: absolute; display: block; left: 232px; top: 976px; width: 399px; height: 88px; z-index: 301; opacity: 1;}	
-	#list .pageTwe>.sectionThree{background: transparent; position: absolute; display: block; left: 30px; top: 40px; width: 624px; height: 861px; z-index: 102; opacity: 1; transform: matrix3d(0.9976, -0.0698, 0, 0, 0.0698, 0.9976, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); animation: forLeftUp 1s linear; transform-origin:0 100%; }
-	#list .pageTwe>.sectionFour{position: absolute; display: block; left: 448px; top: 0px; width: 198px; height: 235px; z-index: 103; opacity: 1;}
-	#list .pageTwe>.sectionFive{position: absolute; display: block; left: 0px; top: 950px; width: 124px; height: 54px; z-index: 150;}
+	#list .pageTwe .sectionOne{position: absolute; display: block; left: -181px; top: 0px; z-index: 0; opacity: 1;}
+	#list .pageTwe .sectionTwe{position: absolute; display: block; left: 232px; top: 976px; width: 399px; height: 88px; z-index: 301; opacity: 1;}	
+	#list .pageTwe .sectionThree{background: transparent; position: absolute; display: block; left: 30px; top: 40px; width: 624px; height: 861px; z-index: 102; opacity: 1; transform: matrix3d(0.9976, -0.0698, 0, 0, 0.0698, 0.9976, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); animation: forLeftUp 1s linear; transform-origin:0 100%; }
+	#list .pageTwe .sectionFour{position: absolute; display: block; left: 448px; top: 0px; width: 198px; height: 235px; z-index: 103; opacity: 1;}
+	#list .pageTwe .sectionFive{position: absolute; display: block; left: 0px; top: 950px; width: 124px; height: 54px; z-index: 150;}
 
 	#list .pageTwe .sectionThree>img:nth-child(1){position: absolute; display: block; left: 0px; top: 0px; width: 624px; height: 861px; z-index: 0; opacity: 1;}
 	#list .pageTwe .sectionThree>img:nth-child(2){overflow: hidden; box-sizing: border-box; -webkit-mask-image: url("../img/page2/cf64c868a9b16291640d7671a42f1a8c.png"); -webkit-mask-size: 626px 861px; position: absolute; display: block; left: 3px; top: 6px; width: 626px; height: 861px; z-index: 0; opacity: 1;}
@@ -597,8 +594,8 @@ img{order:0;}
 /* 第三屏 */
 	#list .pageThree{background: rgb(255, 232, 238); z-index: 2;}
 
-	#list .pageThree>*{position: absolute;}
-	#list .pageThree .sectionOne{overflow: hidden; box-sizing: border-box; border: 1px solid rgb(66, 59, 117); border-radius: 9px; display: block; left: 60px; top: 494px; width: 518px; height: 385px; z-index: 101; opacity: 1;}
+	#list .pageThree>*,.pageThree .content>*{position: absolute;}
+	#list .pageThree .sectionOn{overflow: hidden; box-sizing: border-box; border: 1px solid rgb(66, 59, 117); border-radius: 9px; display: block; left: 60px; top: 494px; width: 518px; height: 385px; z-index: 101; opacity: 1;}
 	#list .pageThree .sectionTwe{background: transparent; left: 23px; top: 94px; width: 460px; height: 152px; z-index: 102; opacity: 1;}
 	#list .pageThree .sectionThree{display: block; left: 230px; top: 919px; width: 221px; height: 85px; z-index: 303; opacity: 1; animation: forRight 2s linear;}
 	#list .pageThree .sectionFour{left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: 3000; pointer-events: none;}
@@ -616,8 +613,8 @@ img{order:0;}
 	#list .pageFour{}
 
 	#list .pageFour img{position:absolute;}
-	#list .pageFour>div{position:absolute;}
-	#list .pageFour .sectionOne{left: -181px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;}
+	#list .pageFour div{position:absolute;}
+	#list .pageFour .sectionOne{left: -181px; top: 0px; z-index: 0; opacity: 1;}
 	#list .pageFour .sectonTwo{top: 0px; left: 0px; z-index: 200;}
 	#list .pageFour .sectionThree{left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: 3000; pointer-events: none;}
 	#list .pageFour .sectionSix{left: 0px; right: 0px; top: 0px; bottom: 0px; pointer-events: none; z-index: 4000;}
@@ -635,8 +632,8 @@ img{order:0;}
 	#list .pageFour .sectionEleven>img:nth-child(2){left: 17px; top: 14px; width: 545px; height: 541px; z-index: 0; opacity: 1;}
 
 /* 第五屏 */
-	#list .pageFive{position: absolute; left: 0px; top: 0px; overflow: hidden; background: rgb(255, 232, 238); z-index: 2; width: 640px; height: 100%;}
-	#list .pageFive>*{position:absolute;}
+	#list .pageFive{background: rgb(255, 232, 238); z-index: 2; width: 640px;}
+	#list .pageFive>*,.content>*{position:absolute;}
 
 	#list .pageFive .sectionOne{overflow: hidden; box-sizing: border-box; border: 1px solid rgb(66, 59, 117); border-radius: 9px; left: 26px; top: 218px; width: 320px; height: 321px; z-index: 101; opacity: 0;animation: keyframe59 1.5s linear 1.5s both running;}
 	#list .pageFive .sectionTwo{overflow: hidden; box-sizing: border-box; border: 1px solid rgb(66, 59, 117); border-radius: 9px; left: 360px; top: 218px; width: 250px; height: 321px; z-index: 102; opacity: 0; animation: keyframe59 1.5s linear 1s both running;}
@@ -653,9 +650,9 @@ img{order:0;}
 	#list .pageFive .sectionThirteen{left: 179px; top: 987px; width: 19px; z-index: 1; opacity: 0; animation: keyframe57 3s infinite both running;}
 
 /* 第六屏 */
-	#list .pageSix{position: absolute; left: 0px; top: 0px; overflow: hidden; background: white; z-index: 2; width: 640px; height: 960px;}
+	#list .pageSix{background: white; z-index: 2;}
 
-	#list .pageSix .sectionOne{position: absolute; left: -180px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;}
+	#list .pageSix .sectionOne{position: absolute; left: -180px; top: 0px; z-index: 0; opacity: 1;}
 	#list .pageSix .sectionTwo{position: absolute; left: 182px; top: 902px; width: 287px; height: 88px; z-index: 301; opacity: 1; animation: keyframe62 1s linear;}
 	#list .pageSix .sectionThree{background: transparent; position: absolute; left: 118px; top: 182px; width: 616px; height: 881px; z-index: 102; opacity: 1; pointer-events:auto; }
 	#list .pageSix .sectionFour{overflow: hidden; position: absolute; display: block; left: 419px; top: 91px; width: 128px; height: 128px; z-index: 403; opacity: 1; animation: forUp 1s linear 1s both running;}
@@ -665,9 +662,9 @@ img{order:0;}
 	#list .pageSix .sectionEight{position: absolute; display: block; left: 96px; top: 717px; width: 432px; height: 76px; z-index: 150; opacity: 0; animation: keyframe60 0.6s linear 4s both running;}
 	#list .pageSix .sectionNine{position: absolute; display: block; left: 442px; top: 814px; width: 53px; height: 48px; z-index: 150; opacity: 0; animation: forOpacity 0.5s linear 4s both running;}
 	#list .pageSix .sectionTen{position: absolute; display: block; left: 62px; top: 1085px;width: 48px; height: 40px; z-index: 150; opacity: 0; animation: forUp2 3s linear infinite both running;}
-	#list .pageSix .sectionElven{position: absolute; display: block; left: 138px; top: 1082px;width: 26px; height: 25px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 0.5131s infinite both running;}
+	#list .pageSix .sectionEleven{position: absolute; display: block; left: 138px; top: 1082px;width: 26px; height: 25px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 0.5131s infinite both running;}
 	#list .pageSix .sectionTwelve{position: absolute; display: block; left: 212px; top: 1097px; width: 40px; height: 39px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 0.0566s infinite both running;}
-	#list .pageSix .sectionThirteen{position: absolute; display: block; left: 434px; top: 1091px; width: 29px; height: 26px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 0.7231s infinite both running;}
+	#list .pageSix .sectionThirdteen{position: absolute; left: 434px; top: 1091px; width: 29px; height: 26px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 0.7231s infinite both running;}
 	#list .pageSix .sectionFourteen{position: absolute; display: block; left: 470px; top: 1085px; width: 28px; height: 29px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 0.9111s infinite both running;}
 	#list .pageSix .sectionFifteen{position: absolute; display: block; left: 558px; top: 1082px; width: 39px; height: 32px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 0.3479s infinite both running;}
 	#list .pageSix .sectionSixteen{position: absolute; display: block; left: 62px; top: 1085px; width: 48px; height: 40px; z-index: 150; opacity: 0; animation: forUp2 2.8s linear 2.0941s infinite both running;}
@@ -685,9 +682,9 @@ img{order:0;}
 	#list .pageSix .sectionSix>img:nth-child(1){height: 123px; width: 123px; margin-left: 0px; margin-top: 0px;}
 
 /* 第七屏 */
-	#list .pageSeven{position: absolute; left: 0px; top: 0px; overflow: hidden; background: white; z-index: 2; width: 640px; height: 960px;}
+	#list .pageSeven{background: white; z-index: 2;}
 
-	#list .pageSeven .sectionOne{position: absolute; display: block; left: -180px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;}
+	#list .pageSeven .sectionOne{position: absolute; display: block; left: -180px; top: 0px; z-index: 0; opacity: 1;}
 	#list .pageSeven .sectionTwo{position: absolute; display: block; left: 59px; top: 337px; width: 90px; height: 281px; z-index: 301; animation: forLeft 1s linear 3s both running; }
 	#list .pageSeven .sectionThree{background: transparent; position: absolute; display: block; left: 30px; top: 14px; width: 295px; height: 272px; z-index: 102; transform: matrix3d(0.9976, -0.0697, 0, 0, 0.0697, 0.9976, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); animation: keyframe70 1s linear both running;}
 	#list .pageSeven .sectionFour{background:transparent; position: absolute; display: block; left: 187px; top: 238px; width: 443px; height: 431px; z-index: 103; animation: keyframe71 1s linear 1s both running;}
@@ -705,9 +702,9 @@ img{order:0;}
 	#list .pageSeven .sectionFive>img:nth-child(2){border-radius: 12px;overflow: hidden; box-sizing: border-box;-webkit-mask-size: 419px 406px; position: absolute; display: block; left: 12px; top: 6px; width: 419px; height: 406px; z-index: 0; opacity: 1;}
 
 /* 第八屏 */
-	#list .pageEight{position: absolute; left: 0px; top: 0px; overflow: hidden; background: white; z-index: 2; width: 640px; height: 960px;}
+	#list .pageEight{background: white; z-index: 2;}
 
-	#list .pageEight .sectionOne{position: absolute; display: block; left: -180px; top: 0px; width: 1001px; height: 1137px; z-index: 0; opacity: 1;}
+	#list .pageEight .sectionOne{position: absolute; display: block; left: -180px; top: 0px; z-index: 0; opacity: 1;}
 	#list .pageEight .sectionTwo{position: absolute; display: block; left: 73px; top: 431px; width: 497px; height: 168px; z-index: 301; animation: keyframe85 2s linear 0.5s both running;}
 	#list .pageEight .sectionThree{position: absolute; display: block; left: 287px; top: 147px; width: 343px; height: 93px; z-index: 150; animation: forRight 1s linear 0.5s both running;}
 	#list .pageEight .sectionFour{position: absolute; display: block; left: 394px; top: 936px; width: 90px; height: 96px; z-index: 150;}
@@ -723,7 +720,7 @@ img{order:0;}
 	#list .pageEight .sectionFourteen{position: absolute; display: block; left: 432px; top: 1049px; width: 83px; height: 59px; z-index: 150; animation: keyframe84 3s linear infinite both running;}
 
 /*第九屏*/
-	#list .pageNine{position: absolute; left: 0px; top: 0px; overflow: hidden; background: rgb(255, 255, 255); z-index: 2; width: 640px; height: 960px;}
+	#list .pageNine{background: rgb(255, 255, 255); z-index: 2;}
 
 	#list .pageNine>img{position:absolute;}
 	#list .pageNine .sectionOne{left: 99px; top: 96px; width: 439px; height: 71px; z-index: 301; animation: keyframe90 1s linear both running;}
